@@ -1,0 +1,624 @@
+﻿<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="UTF-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>North India - Adrayah Travels</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400..900;1,400..900&amp;family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary": "#3c1b00",
+                        "inverse-surface": "#303030",
+                        "on-error-container": "#93000a",
+                        "surface-container-high": "#eae7e7",
+                        "on-secondary": "#ffffff",
+                        "background": "#fcf9f8",
+                        "on-primary-fixed": "#001c38",
+                        "surface-muted": "#F4F8FB",
+                        "secondary": "#00658d",
+                        "inverse-on-surface": "#f3f0ef",
+                        "tertiary-fixed-dim": "#ffb780",
+                        "on-primary-fixed-variant": "#204874",
+                        "primary-container": "#0d3b66",
+                        "on-secondary-fixed": "#001e2d",
+                        "surface-container-low": "#f6f3f2",
+                        "outline-variant": "#c3c6d0",
+                        "on-secondary-fixed-variant": "#004c6b",
+                        "on-secondary-container": "#005576",
+                        "success-green": "#2D6A4F",
+                        "surface-variant": "#e5e2e1",
+                        "surface-container": "#f0eded",
+                        "primary": "#002546",
+                        "on-surface-variant": "#42474f",
+                        "surface-bright": "#fcf9f8",
+                        "tertiary-fixed": "#ffdcc4",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary-fixed-dim": "#82cfff",
+                        "on-tertiary-fixed": "#2f1400",
+                        "outline": "#737780",
+                        "primary-fixed": "#d3e4ff",
+                        "surface": "#fcf9f8",
+                        "glass-border": "rgba(255, 255, 255, 0.3)",
+                        "on-primary": "#ffffff",
+                        "surface-tint": "#3a608d",
+                        "secondary-container": "#73cafe",
+                        "on-tertiary-container": "#e09152",
+                        "on-primary-container": "#81a6d7",
+                        "on-background": "#1b1c1c",
+                        "on-error": "#ffffff",
+                        "on-tertiary-fixed-variant": "#6f3800",
+                        "tertiary-container": "#5c2d00",
+                        "on-tertiary": "#ffffff",
+                        "on-surface": "#1b1c1c",
+                        "surface-dim": "#dcd9d9",
+                        "error-container": "#ffdad6",
+                        "surface-container-highest": "#e5e2e1",
+                        "secondary-fixed": "#c6e7ff",
+                        "glass-surface": "rgba(255, 255, 255, 0.7)",
+                        "error": "#ba1a1a",
+                        "primary-fixed-dim": "#a4c9fc",
+                        "inverse-primary": "#a4c9fc"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "section-gap": "100px",
+                        "gutter-mobile": "16px",
+                        "margin-desktop": "80px",
+                        "margin-mobile": "20px",
+                        "gutter-desktop": "24px",
+                        "unit": "4px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Hanken Grotesk"],
+                        "headline-lg": ["Noto Serif"],
+                        "title-lg": ["Hanken Grotesk"],
+                        "body-lg": ["Hanken Grotesk"],
+                        "display-lg": ["Noto Serif"],
+                        "headline-md": ["Noto Serif"],
+                        "headline-lg-mobile": ["Noto Serif"],
+                        "label-md": ["Hanken Grotesk"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-lg": ["40px", { "lineHeight": "1.2", "fontWeight": "600" }],
+                        "title-lg": ["20px", { "lineHeight": "1.4", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "display-lg": ["56px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-md": ["28px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "headline-lg-mobile": ["32px", { "lineHeight": "1.2", "fontWeight": "600" }],
+                        "label-md": ["14px", { "lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 40px 40px -20px rgba(0, 0, 0, 0.04);
+        }
+        .hero-gradient {
+            background: linear-gradient(to top, rgba(0, 37, 70, 0.9) 0%, rgba(0, 37, 70, 0.3) 50%, rgba(0, 37, 70, 0.1) 100%);
+        }
+        .text-glow {
+            text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+        }
+        .slide-hidden {
+            opacity: 0;
+            z-index: 0;
+            transition: opacity 1s ease-in-out;
+        }
+        .slide-visible {
+            opacity: 1;
+            z-index: 10;
+            transition: opacity 1s ease-in-out;
+        }
+    </style>
+<script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const slides = document.querySelectorAll('.hero-slide');
+            let currentSlide = 0;
+
+            function nextSlide() {
+                slides[currentSlide].classList.remove('slide-visible');
+                slides[currentSlide].classList.add('slide-hidden');
+                currentSlide = (currentSlide + 1) % slides.length;
+                slides[currentSlide].classList.remove('slide-hidden');
+                slides[currentSlide].classList.add('slide-visible');
+            }
+
+            setInterval(nextSlide, 5000); // Change slide every 5 seconds
+        });
+    </script>
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-on-tertiary-container selection:text-white antialiased overflow-x-hidden">
+<!-- TopNavBar -->
+<header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-margin-desktop h-20 bg-glass-surface backdrop-blur-md shadow-sm border-b border-glass-border hidden md:flex">
+<div class="flex items-center gap-4 cursor-pointer scale-95 active:opacity-80 transition-transform">
+<img alt="Adrayah Travels Logo" class="h-12 w-12 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMy1YSouma0Zi_lb3P35GbxDZLIXerJdyZu7fTYeDucNe3ULgdW5KXkeyHdJVbUyX3ou5UCPnFS1IA_o5Ovklt5uG-Yu2UNS5f_04Crh38ovVLj5FHHSFZPvQhyNp4LK0x9iFWu1wdn4NsEnkbbO6I3rvybolURSKa7BHva3kC-IiDaqPZelESqQphOn3ruDHrXFFDRWkP8U9RwbjjEa4-w-kwethfoaXGhZupxw70rIMWa_t5JZRwJ2xadj2SdfRjHuf_CXTKau8">
+<span class="font-headline-md text-headline-md font-bold text-primary">Adrayah Travels</span>
+</div>
+<nav class="flex items-center gap-6"><div class="group relative h-full flex items-center">
+<a class="nav-link text-on-surface-variant hover:text-primary transition-colors font-title-lg text-title-lg py-2" data-nav="Home" href="index.html">Home</a>
+</div>
+<!-- North India Mega Menu -->
+<div class="group relative h-full flex items-center">
+<a class="nav-link text-on-surface-variant hover:text-primary transition-colors font-title-lg text-title-lg flex items-center gap-1 py-2" data-nav="North India" href="north-india.html">North India <span class="material-symbols-outlined text-sm transition-transform group-hover:rotate-180">expand_more</span></a>
+<div class="absolute top-full left-1/2 -translate-x-1/2 w-[600px] bg-white/95 backdrop-blur-md rounded-2xl shadow-2xl border border-glass-border p-6 opacity-0 translate-y-4 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300 z-[100] grid grid-cols-2 gap-4"><a class="flex items-center p-3 rounded-xl hover:bg-surface-muted transition-colors" href="himachal-explorer.html"><div class="flex items-baseline gap-2"><p class="font-bold text-primary">Himachal Pradesh</p><span class="text-xs text-on-surface-variant">- Mountains &amp; Adventure</span></div></a><a class="flex items-center p-3 rounded-xl hover:bg-surface-muted transition-colors" href="kashmir-escape.html"><div class="flex items-baseline gap-2"><p class="font-bold text-primary">Kashmir</p><span class="text-xs text-on-surface-variant">- Paradise on Earth</span></div></a><a class="flex items-center p-3 rounded-xl hover:bg-surface-muted transition-colors" href="#"><div class="flex items-baseline gap-2"><p class="font-bold text-primary">Uttarakhand</p><span class="text-xs text-on-surface-variant">- Lakes, Temples &amp; Nature</span></div></a><a class="flex items-center p-3 rounded-xl hover:bg-surface-muted transition-colors" href="#"><div class="flex items-baseline gap-2"><p class="font-bold text-primary">Golden Triangle</p><span class="text-xs text-on-surface-variant">- Delhi, Agra &amp; Jaipur</span></div></a></div>
+</div>
+<!-- South India Mega Menu -->
+<div class="group relative h-full flex items-center">
+<a class="nav-link text-on-surface-variant hover:text-primary transition-colors font-title-lg text-title-lg flex items-center gap-1 py-2" data-nav="South India" href="south-india.html">South India <span class="material-symbols-outlined text-sm transition-transform group-hover:rotate-180">expand_more</span></a>
+<div class="absolute top-full left-1/2 -translate-x-1/2 w-[600px] bg-white/95 backdrop-blur-md rounded-2xl shadow-2xl border border-glass-border p-6 opacity-0 translate-y-4 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300 z-[100] grid grid-cols-2 gap-4"><a class="flex items-center p-3 rounded-xl hover:bg-surface-muted transition-colors" href="kerala-retreat.html"><div class="flex items-baseline gap-2"><p class="font-bold text-primary">Kerala</p><span class="text-xs text-on-surface-variant">- Backwaters &amp; Hills</span></div></a><a class="flex items-center p-3 rounded-xl hover:bg-surface-muted transition-colors" href="#"><div class="flex items-baseline gap-2"><p class="font-bold text-primary">Goa</p><span class="text-xs text-on-surface-variant">- Beaches &amp; Nightlife</span></div></a><a class="flex items-center p-3 rounded-xl hover:bg-surface-muted transition-colors" href="#"><div class="flex items-baseline gap-2"><p class="font-bold text-primary">Tamil Nadu</p><span class="text-xs text-on-surface-variant">- Heritage &amp; Temples</span></div></a><a class="flex items-center p-3 rounded-xl hover:bg-surface-muted transition-colors" href="#"><div class="flex items-baseline gap-2"><p class="font-bold text-primary">Karnataka</p><span class="text-xs text-on-surface-variant">- Culture &amp; Coffee Trails</span></div></a></div>
+</div>
+<!-- East India Mega Menu -->
+<div class="group relative h-full flex items-center">
+<a href="east-india.html" class="nav-link text-on-surface-variant hover:text-primary transition-colors font-title-lg text-title-lg flex items-center gap-1 py-2" data-nav="East India">East India <span class="material-symbols-outlined text-sm transition-transform group-hover:rotate-180">expand_more</span></a>
+<div class="absolute top-full left-1/2 -translate-x-1/2 w-[600px] bg-white/95 backdrop-blur-md rounded-2xl shadow-2xl border border-glass-border p-6 opacity-0 translate-y-4 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300 z-[100] grid grid-cols-2 gap-4"><a class="flex items-center p-3 rounded-xl hover:bg-surface-muted transition-colors" href="#"><div class="flex items-baseline gap-2"><p class="font-bold text-primary">Darjeeling</p><span class="text-xs text-on-surface-variant">- Tea Estates &amp; Toy Train</span></div></a><a class="flex items-center p-3 rounded-xl hover:bg-surface-muted transition-colors" href="#"><div class="flex items-baseline gap-2"><p class="font-bold text-primary">Gangtok</p><span class="text-xs text-on-surface-variant">- Monasteries &amp; Mountains</span></div></a><a class="flex items-center p-3 rounded-xl hover:bg-surface-muted transition-colors" href="meghalaya-discovery.html"><div class="flex items-baseline gap-2"><p class="font-bold text-primary">Meghalaya</p><span class="text-xs text-on-surface-variant">- Waterfalls &amp; Living Root Bridges</span></div></a><a class="flex items-center p-3 rounded-xl hover:bg-surface-muted transition-colors" href="#"><div class="flex items-baseline gap-2"><p class="font-bold text-primary">Odisha</p><span class="text-xs text-on-surface-variant">- Temples &amp; Coastal Heritage</span></div></a></div>
+</div>
+<!-- West India Mega Menu -->
+<div class="group relative h-full flex items-center">
+<a href="west-india.html" class="nav-link text-on-surface-variant hover:text-primary transition-colors font-title-lg text-title-lg flex items-center gap-1 py-2" data-nav="West India">West India <span class="material-symbols-outlined text-sm transition-transform group-hover:rotate-180">expand_more</span></a>
+<div class="absolute top-full right-0 w-[600px] bg-white/95 backdrop-blur-md rounded-2xl shadow-2xl border border-glass-border p-6 opacity-0 translate-y-4 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300 z-[100] grid grid-cols-2 gap-4"><a class="flex items-center p-3 rounded-xl hover:bg-surface-muted transition-colors" href="rajasthan-royal-circuit.html"><div class="flex items-baseline gap-2"><p class="font-bold text-primary">Rajasthan</p><span class="text-xs text-on-surface-variant">- Forts &amp; Royal Palaces</span></div></a><a class="flex items-center p-3 rounded-xl hover:bg-surface-muted transition-colors" href="#"><div class="flex items-baseline gap-2"><p class="font-bold text-primary">Gujarat</p><span class="text-xs text-on-surface-variant">- Wildlife &amp; Heritage</span></div></a><a class="flex items-center p-3 rounded-xl hover:bg-surface-muted transition-colors" href="#"><div class="flex items-baseline gap-2"><p class="font-bold text-primary">Maharashtra</p><span class="text-xs text-on-surface-variant">- Cities &amp; Hill Escapes</span></div></a></div>
+</div>
+<a class="nav-link text-on-surface-variant hover:text-primary transition-colors font-title-lg text-title-lg py-2" data-nav="Special Tours" href="special-tours.html">Special Tours</a>
+<a class="nav-link text-on-surface-variant hover:text-primary transition-colors font-title-lg text-title-lg py-2" data-nav="Contact" href="#">Contact</a></nav>
+<button class="bg-on-tertiary-container text-white px-6 py-2 rounded-full font-label-md text-label-md hover:opacity-90 transition-opacity shadow-lg shadow-on-tertiary-container/20" onclick="openEnquiryModal('General')">Enquire Now</button>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    let path = window.location.pathname.split('/').filter(Boolean).pop() || 'index';
+    path = path.replace('.html', '');
+    
+    const activeMap = {
+        'index': 'Home',
+        'north-india': 'North India',
+        'kashmir-escape': 'North India',
+        'himachal-explorer': 'North India',
+        'south-india': 'South India',
+        'kerala-retreat': 'South India',
+        'east-india': 'East India',
+        'meghalaya-discovery': 'East India',
+        'west-india': 'West India',
+        'rajasthan-royal-circuit': 'West India'
+    };
+    
+    const activeTarget = activeMap[path];
+    
+    document.querySelectorAll('.nav-link').forEach(link => {
+        // Reset all
+        link.classList.remove('text-on-secondary-container', 'border-b-2', 'border-on-tertiary-container', 'pb-1', 'font-bold', 'hover:text-on-tertiary-container');
+        link.classList.add('text-on-surface-variant', 'hover:text-primary', 'py-2');
+        
+        // Apply active
+        if (activeTarget && link.getAttribute('data-nav') === activeTarget) {
+            link.classList.remove('text-on-surface-variant', 'hover:text-primary', 'py-2');
+            link.classList.add('text-on-secondary-container', 'border-b-2', 'border-on-tertiary-container', 'pb-1', 'font-bold', 'hover:text-on-tertiary-container');
+        }
+    });
+});
+</script>
+</header>
+<!-- Mobile Top Header (Simplified) -->
+<header class="md:hidden fixed top-0 left-0 w-full z-50 flex justify-between items-center px-margin-mobile h-16 bg-glass-surface backdrop-blur-md shadow-sm border-b border-glass-border">
+<div class="flex items-center gap-2">
+<img alt="Adrayah Travels Logo" class="h-8 w-8 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMy1YSouma0Zi_lb3P35GbxDZLIXerJdyZu7fTYeDucNe3ULgdW5KXkeyHdJVbUyX3ou5UCPnFS1IA_o5Ovklt5uG-Yu2UNS5f_04Crh38ovVLj5FHHSFZPvQhyNp4LK0x9iFWu1wdn4NsEnkbbO6I3rvybolURSKa7BHva3kC-IiDaqPZelESqQphOn3ruDHrXFFDRWkP8U9RwbjjEa4-w-kwethfoaXGhZupxw70rIMWa_t5JZRwJ2xadj2SdfRjHuf_CXTKau8">
+<span class="font-headline-md text-headline-md font-bold text-primary text-xl">Adrayah</span>
+</div>
+<button class="text-primary p-2">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative h-screen min-h-[600px] flex items-end pb-24 pt-32 overflow-hidden">
+<!-- Background Images (Slideshow) -->
+<div class="absolute inset-0 bg-primary">
+<img alt="Cinematic wide shot of Dal Lake in Kashmir at sunrise with traditional Shikara boats floating gently. High-key soft morning light creates a pristine, modern aesthetic with deep blues and crisp whites. Serene, luxurious, and spiritually uplifting mood." class="hero-slide slide-visible absolute inset-0 w-full h-full object-cover object-center opacity-80" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAV2ltwBeM84YkWitVMCeR4-UKsr3GhYuEuE7r-gRzrZqAs6HinRrq3zUPMXXAccRHDz7XeGk6AtftZABZxGrYfYW861lt3OULq798iUaUY3UoTlW7NJK1jbaCEHsD2zDUYBVVkvQFAHYWhOisFiSt88xDoELTrCAKcak7qkwxThcCXMv6s5JU7ov7QefCeMYQw-q6X77H7TohfQiNhGgWOlxG4UGfjl4aiHJMXAlGmr-SRp9y57xVV7LiZXt9ra_WeovXYvlFwcFk"/>
+<img alt="Snow-capped peaks of Manali." class="hero-slide slide-hidden absolute inset-0 w-full h-full object-cover object-center opacity-80" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDddo52M5134TmdWvw5j3LUFQVeEwHTzQwAayIMdLcdgQZZ4cJevmIZVTkq5KS4wX5hcaVskPyvcDxIloLs06Up584738ynUPRyu7Ug2qVmBy6CaRCrihyR6aJBNJOD3bAScX0R9RUEsu4vGujbjk9DvTgcvu6eC9bqmDzSgqGxlcWRg6AJ4H9W-qyz9HAWUMlYHrlKMUGD5JSXJrQgg8jJ4OZgE4C3JtvcOLoMkOzQQuJP7gI4oXpZfjWtVK3jFUiO7vmyU0vrS8"/>
+<img alt="Majestic Kedarnath temple in the Himalayas." class="hero-slide slide-hidden absolute inset-0 w-full h-full object-cover object-center opacity-80" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDd8WU6TzE2qoXXXkZBl1b9B98J3nqNSgz2hEw-0n3VsixrF5M6frGP2rjRCKBul4O32KR1GHsW1Aq4bhYbSiHgD-kLmqeA5Q9mrnGVR_u4ufpi1vq92tgpl5k77fpZH5AyTur5FEwzPRRQfh3pa6JCCzMCCCyhM5dR6Am4g9EnJOuQ6XJxYQ6RBxYbH1-SU7wKVxnTxmyvF1R1f5ya3bgC16GEQB9wRrRnONtzDt-dmvqz_E5A9WisRR1K3P5Nbqt2IyXocXDlF5Q"/>
+<img alt="Ganga Aarti in Varanasi at dusk." class="hero-slide slide-hidden absolute inset-0 w-full h-full object-cover object-center opacity-80" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAb2w-4ZJrcHiIiXQ8xB4T6dlAdZ8XsD2GEfQc7tLbXmrnr9GPQ3NCdtikBKeHiuB0iAa6lfXA3ouC2Lughw3euW8_00vKmEsnjbUVf1LEjvL8JmxWRi6tks-fRCwPbQh7nH44e57PHFu6gFyMz49WhOIR-Dn3qSJeSelpGm80MWRcmepl2xfrdKSRDBqaXK2JMMdBeb411SBEe55Qu68X1NoCTseDREl6hUeHNOdOlgHdIejkJm2ABWxOHQebqIKXNZKYWJTwoR2k"/>
+<div class="absolute inset-0 hero-gradient z-20"></div>
+</div>
+<div class="relative z-30 px-margin-mobile md:px-margin-desktop w-full max-w-7xl mx-auto">
+<div class="max-w-3xl text-white">
+<span class="font-label-md text-label-md text-on-tertiary-container uppercase tracking-widest mb-4 block drop-shadow-md">Mountains, Heritage &amp; Spiritual Journeys</span>
+<h1 class="font-display-lg text-display-lg md:text-[72px] leading-tight font-bold mb-6 text-glow">North India</h1>
+<p class="font-body-lg text-body-lg text-surface-muted mb-10 max-w-2xl opacity-90">
+                        From the snow-capped Himalayas and sacred rivers to royal forts and timeless traditions, discover North India's most unforgettable experiences with Adrayah Travels.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="bg-on-tertiary-container text-white px-8 py-4 rounded-full font-label-md text-label-md hover:bg-tertiary-container transition-colors shadow-[0_0_20px_rgba(224,145,82,0.4)] text-center">
+                            Explore Packages
+                        </button>
+<button class="bg-[#25D366] text-white px-8 py-4 rounded-full font-label-md text-label-md hover:bg-[#128C7E] transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">chat</span>
+                            Chat on WhatsApp
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Why Travel North India? -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-surface">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-4 font-bold">Why Travel North India?</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Curated experiences designed for the discerning traveler, blending exotic locales with sophisticated comfort.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter-desktop">
+<!-- Cards -->
+<div class="glass-card p-8 rounded-xl flex flex-col items-center text-center hover:-translate-y-2 transition-transform duration-300">
+<div class="w-16 h-16 rounded-full bg-primary-fixed flex items-center justify-center text-primary mb-6">
+<span class="material-symbols-outlined text-[32px]">landscape</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary mb-3">Himalayan Adventures</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Majestic peaks, serene valleys, and thrilling escapades in Kashmir and Himachal.</p>
+</div>
+<div class="glass-card p-8 rounded-xl flex flex-col items-center text-center hover:-translate-y-2 transition-transform duration-300">
+<div class="w-16 h-16 rounded-full bg-primary-fixed flex items-center justify-center text-primary mb-6">
+<span class="material-symbols-outlined text-[32px]">self_improvement</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary mb-3">Spiritual Escapes</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Find peace along the sacred Ganges in Varanasi, Rishikesh, and Kedarnath.</p>
+</div>
+<div class="glass-card p-8 rounded-xl flex flex-col items-center text-center hover:-translate-y-2 transition-transform duration-300">
+<div class="w-16 h-16 rounded-full bg-primary-fixed flex items-center justify-center text-primary mb-6">
+<span class="material-symbols-outlined text-[32px]">castle</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary mb-3">Heritage Cities</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Immerse yourself in the royal legacy of Jaipur, Agra, and Delhi's Golden Triangle.</p>
+</div>
+<div class="glass-card p-8 rounded-xl flex flex-col items-center text-center hover:-translate-y-2 transition-transform duration-300">
+<div class="w-16 h-16 rounded-full bg-primary-fixed flex items-center justify-center text-primary mb-6">
+<span class="material-symbols-outlined text-[32px]">cruelty_free</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary mb-3">Wildlife Experiences</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Encounter majestic tigers in Ranthambore and Jim Corbett National Parks.</p>
+</div>
+<div class="glass-card p-8 rounded-xl flex flex-col items-center text-center hover:-translate-y-2 transition-transform duration-300">
+<div class="w-16 h-16 rounded-full bg-primary-fixed flex items-center justify-center text-primary mb-6">
+<span class="material-symbols-outlined text-[32px]">family_restroom</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary mb-3">Family Holidays</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Create lifelong memories with curated, comfortable itineraries for all ages.</p>
+</div>
+<div class="glass-card p-8 rounded-xl flex flex-col items-center text-center hover:-translate-y-2 transition-transform duration-300">
+<div class="w-16 h-16 rounded-full bg-primary-fixed flex items-center justify-center text-primary mb-6">
+<span class="material-symbols-outlined text-[32px]">favorite</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary mb-3">Honeymoon Journeys</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Romantic getaways in luxurious resorts amidst breathtaking landscapes.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Explore North India Destinations -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-surface-container-low">
+<div class="max-w-7xl mx-auto">
+<div class="flex justify-between items-end mb-12">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-4 font-bold">Explore North India Destinations</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">Discover our handpicked premium destinations across the majestic north.</p>
+</div>
+<button class="hidden md:inline-flex text-on-tertiary-container hover:text-tertiary-container font-label-md text-label-md items-center gap-1 transition-colors">
+                    View All Destinations <span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Destination Card 1 -->
+<div class="group relative rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 aspect-[4/5] bg-surface cursor-pointer">
+<img alt="Kashmir Dal Lake" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzfZ_JW93o08yjEgDKjMJ-THvMcNy9mWLvkyB8JSb6ivl2T70SPcft2Zr66UC5jmjUwTfz9mqrzvlzc0tOnY1YgBw0VyDBkxXXnYNGiWVaC8ZM19H6fzCXCGFUueZYEoGIyckJeH33abzy2_BYbSx6Ue5eYRRGM4eGusdO1c3H3p3-aY8JFI1crzU6jCRjq-L7cqkA5By9Yh2w3qFylqrORJqy6ddpxSpBmydnscmadHlnX30iEv3y1xyTMrl8QeFZAjaPZdFloIA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-6 w-full text-white">
+<h3 class="font-headline-md text-headline-md font-bold mb-2">Kashmir</h3>
+<p class="font-body-md text-body-md text-surface-muted mb-4 line-clamp-2">The Paradise on Earth, featuring pristine lakes, snow-capped peaks, and lush valleys.</p>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-glass-surface backdrop-blur-sm rounded-full text-xs font-label-md text-primary">5-7 Days</span>
+<span class="px-3 py-1 bg-glass-surface backdrop-blur-sm rounded-full text-xs font-label-md text-primary">Honeymoon</span>
+</div>
+</div>
+</div>
+<!-- Destination Card 2 -->
+<div class="group relative rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 aspect-[4/5] bg-surface cursor-pointer">
+<img alt="Himachal Pradesh Mountains" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCK3TqyUZIWagrGLviOUnRnwfmTHgx12VYaz10QsWVktPRGBg-7Hq11LeYs4iGAYbLSUi_5T7MQfTW1W4wnfkVnAotsp32g1sJAneGYrgtngkS7wLjFwxmXf7P3FhMVRemwZBaHWi_o5pPwbRh64wGT-5J1qEDqyTl0Vpx8TBm-weQGFsQzIgvpUp7kM8ypdOD_eP9BYJi4O7w3VsjUcVJQ-UxjxjTPj-WOBCrSabUJ-Zzj5ywT9ByO2KfNQyvmZVxS6dnb9Y-7k3w"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-6 w-full text-white">
+<h3 class="font-headline-md text-headline-md font-bold mb-2">Himachal Pradesh</h3>
+<p class="font-body-md text-body-md text-surface-muted mb-4 line-clamp-2">A haven for adventure seekers and nature lovers, offering thrilling sports and serene landscapes.</p>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-glass-surface backdrop-blur-sm rounded-full text-xs font-label-md text-primary">6-8 Days</span>
+<span class="px-3 py-1 bg-glass-surface backdrop-blur-sm rounded-full text-xs font-label-md text-primary">Adventure</span>
+</div>
+</div>
+</div>
+<!-- Destination Card 3 -->
+<div class="group relative rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 aspect-[4/5] bg-surface cursor-pointer">
+<img alt="Uttarakhand Temples" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuACnYlkS1_TT8WX-6PpIiiEyDKkfWniJ1wuhzzYULEN5M7RGmXFvCm6yiHyWuAlFla0hIfPS7sClLz0VsjbUcnGcBodorhf6r-ii1lnUFWSE1rwR_Q2pq3xaX-QQjLNoR-cStWj30ziQ1PIqc3NrmQQC_aIZfwNwohV50rKar-HLPveyjF7pjiCK145xDJ8VgmUxRjby-XCL6tCiFn5xvNZghEWZKp7HsG862PqoKitz-EvbX4D6bgs1VR3Kz4TkNeVi_cM2UcjER4"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-6 w-full text-white">
+<h3 class="font-headline-md text-headline-md font-bold mb-2">Uttarakhand</h3>
+<p class="font-body-md text-body-md text-surface-muted mb-4 line-clamp-2">The Land of Gods, home to sacred rivers, ancient temples, and the majestic Himalayas.</p>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-glass-surface backdrop-blur-sm rounded-full text-xs font-label-md text-primary">4-6 Days</span>
+<span class="px-3 py-1 bg-glass-surface backdrop-blur-sm rounded-full text-xs font-label-md text-primary">Spiritual</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Enquiry Section -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-surface relative overflow-hidden">
+<div class="max-w-4xl mx-auto relative z-10">
+<div class="bg-white p-8 md:p-12 rounded-2xl shadow-[0_20px_40px_-15px_rgba(0,0,0,0.05)] border border-surface-container-high">
+<div class="text-center mb-10">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-4 font-bold">Plan Your North India Journey</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Let our experts craft a bespoke itinerary tailored to your preferences.</p>
+</div>
+<form class="space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-2" for="name">Full Name</label>
+<input class="w-full px-4 py-3 rounded-lg border border-outline-variant bg-surface focus:ring-2 focus:ring-on-tertiary-container focus:border-transparent transition-all outline-none font-body-md text-body-md" id="name" placeholder="John Doe" type="text"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-2" for="phone">Phone Number</label>
+<input class="w-full px-4 py-3 rounded-lg border border-outline-variant bg-surface focus:ring-2 focus:ring-on-tertiary-container focus:border-transparent transition-all outline-none font-body-md text-body-md" id="phone" placeholder="+91 98765 43210" type="tel"/>
+</div>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-2" for="email">Email Address</label>
+<input class="w-full px-4 py-3 rounded-lg border border-outline-variant bg-surface focus:ring-2 focus:ring-on-tertiary-container focus:border-transparent transition-all outline-none font-body-md text-body-md" id="email" placeholder="john@example.com" type="email"/>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-2" for="destination">Preferred Destination</label>
+<select class="w-full px-4 py-3 rounded-lg border border-outline-variant bg-surface focus:ring-2 focus:ring-on-tertiary-container focus:border-transparent transition-all outline-none font-body-md text-body-md text-on-surface-variant" id="destination">
+<option value="">Select Destination</option>
+<option value="kashmir">Kashmir</option>
+<option value="himachal">Himachal Pradesh</option>
+<option value="uttarakhand">Uttarakhand</option>
+<option value="golden-triangle">Golden Triangle</option>
+<option value="other">Other / Not Sure</option>
+</select>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-2" for="travel-date">Tentative Travel Date</label>
+<input class="w-full px-4 py-3 rounded-lg border border-outline-variant bg-surface focus:ring-2 focus:ring-on-tertiary-container focus:border-transparent transition-all outline-none font-body-md text-body-md text-on-surface-variant" id="travel-date" type="date"/>
+</div>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-2" for="message">Additional Requirements (Optional)</label>
+<textarea class="w-full px-4 py-3 rounded-lg border border-outline-variant bg-surface focus:ring-2 focus:ring-on-tertiary-container focus:border-transparent transition-all outline-none font-body-md text-body-md resize-none" id="message" placeholder="Tell us about any specific interests, group size, or special occasions..." rows="4"></textarea>
+</div>
+<div class="pt-4">
+<button class="w-full bg-on-tertiary-container text-white px-8 py-4 rounded-full font-label-md text-label-md hover:bg-tertiary-container transition-colors shadow-lg hover:shadow-xl font-bold text-lg" type="submit">
+                                Request a Call Back
+                            </button>
+<p class="font-body-md text-[14px] text-center text-on-surface-variant mt-4 opacity-80">We typically respond within 24 hours.</p>
+</div>
+</form>
+</div>
+</div>
+</section>
+<!-- Spacer -->
+<div class="h-section-gap bg-background"></div>
+</main>
+<div class="fixed inset-0 z-[100] flex items-center justify-center bg-black/60 backdrop-blur-sm p-4 hidden" id="modal-container">
+<!-- Callback Modal -->
+<div class="bg-white rounded-2xl w-full max-w-md p-8 shadow-2xl transform scale-95 opacity-0 transition-all duration-300 hidden relative" id="callback-modal">
+<button class="absolute top-4 right-4 text-on-surface-variant hover:text-primary transition-colors" onclick="closeModals()">
+<span class="material-symbols-outlined">close</span>
+</button>
+<h3 class="font-headline-md font-serif text-primary mb-2">Request a Callback</h3>
+<p class="font-body-md text-on-surface-variant mb-6">Leave your details and our luxury travel experts will get in touch shortly.</p>
+<div id="enquiry-form-container"></div>
+</div>
+<!-- Enquiry Modal -->
+<div class="bg-white rounded-2xl w-full max-w-md p-8 shadow-2xl transform scale-95 opacity-0 transition-all duration-300 hidden relative" id="enquiry-modal">
+<button class="absolute top-4 right-4 text-on-surface-variant hover:text-primary transition-colors" onclick="closeModals()">
+<span class="material-symbols-outlined">close</span>
+</button>
+<h3 class="font-headline-md font-serif text-primary mb-2" id="enquiry-title">Enquire Now</h3>
+<p class="font-body-md text-on-surface-variant mb-6">Start planning your bespoke journey to <span class="font-bold text-primary" id="enquiry-destination">India</span>.</p>
+<div id="enquiry-form-container"></div>
+</div>
+<!-- Exit Intent Modal -->
+<div class="bg-white rounded-2xl w-full max-w-lg p-0 overflow-hidden shadow-2xl transform transition-all duration-300 relative scale-95 opacity-0 hidden" id="exit-modal">
+<button class="absolute top-4 right-4 text-white hover:text-gray-200 transition-colors z-10 bg-black/20 rounded-full p-1" onclick="closeModals()">
+<span class="material-symbols-outlined">close</span>
+</button>
+<div class="h-48 relative">
+<img alt="Luxury Travel" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA90LnVZ72radsn4MntqHD9qPvGEvtHEmhNGzZw-hUvJVp1ZoR-5NdPqTd4HAhEipr3BtLbMAwQN3J30Dkn1oyRzEawmrMOq5MsZVUqr-hjmc6zakPjz0Cvg61jus57R2_yf-dqHfMk3xGoltRp6aeM7RNMCRaeXG95tHq-ZlDthPaB5QgeW8Cpoq5WLgcgO7tSK_iGjD0P47ryJ6XHCkELyVS0Lsrpc4GZHZLm6yVbL8JKZ7ShVRbq4vnJW1S7lsOknq8dlthTvis">
+<div class="absolute inset-0 bg-primary/60"></div>
+<div class="absolute inset-0 flex flex-col items-center justify-center text-white p-6 text-center">
+<h3 class="font-display-lg font-serif text-3xl mb-2">Wait! Don't Miss Out</h3>
+<p class="font-body-md opacity-90">Unlock an exclusive offer for your first journey.</p>
+</div>
+</div>
+<div class="p-8 text-center flex flex-col items-center">
+<p class="font-body-lg text-on-surface-variant mb-6">Get a <span class="font-bold text-primary text-xl">Special Discount</span> on your first booking when you reach out via WhatsApp today.</p>
+<a class="w-full bg-success-green text-white py-4 rounded-full font-label-md hover:bg-opacity-90 transition-all flex items-center justify-center gap-2 mb-3" href="https://wa.me/919654182903?text=Hello Adrayah Travels, I'd like to claim my special discount for a new booking!" target="_blank">
+<span class="material-symbols-outlined">chat</span>
+                Claim Offer on WhatsApp
+            </a>
+<button class="text-on-surface-variant font-label-md hover:underline text-sm" onclick="closeModals()">No thanks, I'll pay full price</button>
+</div>
+</div>
+</div>
+<!-- Scripts for Interactions -->
+<script>
+    // Sticky Strip Scroll
+    window.addEventListener('scroll', () => {
+        const strip = document.getElementById('conversion-strip');
+        if (window.scrollY > 500) {
+            strip.classList.remove('translate-y-full');
+        } else {
+            strip.classList.add('translate-y-full');
+        }
+    });
+
+    // Modals Logic
+    const modalContainer = document.getElementById('modal-container');
+    const callbackModal = document.getElementById('callback-modal');
+    const enquiryModal = document.getElementById('enquiry-modal');
+    const exitModal = document.getElementById('exit-modal');
+    
+    function showModal(modalEl) {
+        modalContainer.classList.remove('hidden');
+        modalEl.classList.remove('hidden');
+        // Small delay to allow display:block to apply before animating opacity/scale
+        setTimeout(() => {
+            modalEl.classList.remove('scale-95', 'opacity-0');
+            modalEl.classList.add('scale-100', 'opacity-100');
+        }, 10);
+    }
+
+    function closeModals() {
+        [callbackModal, enquiryModal, exitModal].forEach(m => {
+            m.classList.remove('scale-100', 'opacity-100');
+            m.classList.add('scale-95', 'opacity-0');
+        });
+        setTimeout(() => {
+            modalContainer.classList.add('hidden');
+            [callbackModal, enquiryModal, exitModal].forEach(m => m.classList.add('hidden'));
+        }, 300);
+    }
+
+    function openCallbackModal() { showModal(callbackModal); }
+    
+    function openEnquiryModal(destination) {
+        document.getElementById('enquiry-destination').textContent = destination;
+        showModal(enquiryModal);
+    }
+
+    // Close on background click
+    modalContainer.addEventListener('click', (e) => {
+        if (e.target === modalContainer) closeModals();
+    });
+
+    // Exit Intent Logic
+    let exitShown = false;
+    document.addEventListener('mouseleave', (e) => {
+        if (e.clientY < 0 && !exitShown) {
+            exitShown = true;
+            showModal(exitModal);
+        }
+    });
+</script>
+<!-- Footer -->
+<footer class="w-full pt-16 pb-16 bg-[#0A2540] text-white">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-8">
+    <!-- Brand Column -->
+    <div class="flex flex-col gap-4">
+        <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full border border-white/30 flex items-center justify-center flex-shrink-0">
+                <span class="material-symbols-outlined text-[20px] text-white/80">explore</span>
+            </div>
+            <div class="font-serif leading-tight">
+                <div class="font-headline-md text-[28px] font-bold tracking-wide">Adrayah</div>
+                <div class="font-headline-md text-[28px] font-bold tracking-wide">Travels</div>
+            </div>
+        </div>
+        <p class="font-body-sm text-sm mt-1 text-white/90">à¤…à¤¦à¥à¤µà¤¯: - à¤šà¤²à¥‹ à¤šà¤²à¥‡à¤‚....</p>
+        <p class="font-body-sm text-[15px] opacity-80 leading-relaxed mt-2 text-white/90">
+            Crafting unforgettable journeys across Incredible India through personalized itineraries, curated experiences, and exceptional hospitality.
+        </p>
+        <div class="flex items-center gap-2 mt-4 text-[15px] opacity-90 text-white/90">
+            <span class="material-symbols-outlined text-[20px]">location_on</span>
+            <span>Delhi, India</span>
+        </div>
+    </div>
+
+    <!-- Contact Us Column -->
+    <div class="flex flex-col gap-6">
+        <h4 class="font-title-lg text-lg font-bold tracking-wide">Contact Us</h4>
+        <div class="flex flex-col gap-4">
+            <div class="flex items-center gap-3 text-white/80 hover:text-white transition-colors cursor-pointer">
+                <span class="material-symbols-outlined text-[20px]">chat</span>
+                <span class="font-body-md text-[15px]">+91 9654182903</span>
+            </div>
+            <div class="flex items-center gap-3 text-white/80 hover:text-white transition-colors cursor-pointer">
+                <span class="material-symbols-outlined text-[20px]">chat</span>
+                <span class="font-body-md text-[15px]">+91 7982037419</span>
+            </div>
+            <div class="flex items-center gap-3 text-white/80 hover:text-white transition-colors cursor-pointer">
+                <span class="material-symbols-outlined text-[20px]">mail</span>
+                <span class="font-body-md text-[15px]">info@adrayahtravels.com</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quick Links Column -->
+    <div class="flex flex-col gap-6">
+        <h4 class="font-title-lg text-lg font-bold tracking-wide">Quick Links</h4>
+        <div class="flex flex-col gap-3">
+            <a href="north-india.html" class="font-body-md text-[15px] text-white/80 hover:text-white transition-colors">North India</a>
+            <a href="south-india.html" class="font-body-md text-[15px] text-white/80 hover:text-white transition-colors">South India</a>
+            <a href="east-india.html" class="font-body-md text-[15px] text-white/80 hover:text-white transition-colors">East India</a>
+            <a href="west-india.html" class="font-body-md text-[15px] text-white/80 hover:text-white transition-colors">West India</a>
+            <a href="special-tours.html" class="font-body-md text-[15px] text-white/80 hover:text-white transition-colors">Special Tours</a>
+            <a href="contact.html" class="font-body-md text-[15px] text-white/80 hover:text-white transition-colors">Contact Us</a>
+        </div>
+    </div>
+
+    <!-- Follow Us Column -->
+    <div class="flex flex-col gap-6">
+        <h4 class="font-title-lg text-lg font-bold tracking-wide">Follow Us</h4>
+        <div class="flex gap-4">
+            <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors">
+                <span class="material-symbols-outlined text-[20px] text-white/90">public</span>
+            </a>
+            <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors">
+                <span class="material-symbols-outlined text-[20px] text-white/90">share</span>
+            </a>
+            <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors">
+                <span class="material-symbols-outlined text-[20px] text-white/90">photo_library</span>
+            </a>
+        </div>
+        <div class="flex flex-col gap-2 mt-2">
+            <p class="font-body-md text-[15px] text-white/80">Instagram: @adrayahtravel</p>
+            <p class="font-body-md text-[15px] text-white/80">Facebook: @adrayahtravel</p>
+        </div>
+    </div>
+</div>
+</footer>
+<!-- BottomNavBar (Mobile Only) -->
+<div class="md:hidden fixed bottom-6 right-6 z-50 flex gap-4">
+<button class="flex items-center gap-2 text-primary dark:text-primary-fixed-dim px-6 py-3 bg-glass-surface dark:bg-primary/90 backdrop-blur-lg border border-glass-border shadow-lg rounded-full font-label-md text-label-md hover:scale-105 transition-transform duration-300">
+<span class="material-symbols-outlined">chat</span>
+<span class="hidden sm:inline">WhatsApp</span>
+</button>
+<button class="flex items-center gap-2 text-primary dark:text-primary-fixed-dim px-6 py-3 bg-glass-surface dark:bg-primary/90 backdrop-blur-lg border border-glass-border shadow-lg rounded-full font-label-md text-label-md hover:scale-105 transition-transform duration-300">
+<span class="material-symbols-outlined">call</span>
+<span class="hidden sm:inline">Call Support</span>
+</button>
+</div>
+
+
+
+
+
+    <script src="assets/js/enquiry-system.js"></script>
+</body></html>
+
+
+
+
+
+
+

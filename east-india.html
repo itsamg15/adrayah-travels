@@ -1,0 +1,611 @@
+﻿<!DOCTYPE html><html class="light" lang="en" style=""><head>
+<meta charset="UTF-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>East India: Mystical Horizons - Adrayah Travels</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&amp;family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary": "#3c1b00",
+                        "inverse-surface": "#303030",
+                        "on-error-container": "#93000a",
+                        "surface-container-high": "#eae7e7",
+                        "on-secondary": "#ffffff",
+                        "background": "#fcf9f8",
+                        "on-primary-fixed": "#001c38",
+                        "surface-muted": "#F4F8FB",
+                        "secondary": "#00658d",
+                        "inverse-on-surface": "#f3f0ef",
+                        "tertiary-fixed-dim": "#ffb780",
+                        "on-primary-fixed-variant": "#204874",
+                        "primary-container": "#0d3b66",
+                        "on-secondary-fixed": "#001e2d",
+                        "surface-container-low": "#f6f3f2",
+                        "outline-variant": "#c3c6d0",
+                        "on-secondary-fixed-variant": "#004c6b",
+                        "on-secondary-container": "#005576",
+                        "success-green": "#2D6A4F",
+                        "surface-variant": "#e5e2e1",
+                        "surface-container": "#f0eded",
+                        "primary": "#002546",
+                        "on-surface-variant": "#42474f",
+                        "surface-bright": "#fcf9f8",
+                        "tertiary-fixed": "#ffdcc4",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary-fixed-dim": "#82cfff",
+                        "on-tertiary-fixed": "#2f1400",
+                        "outline": "#737780",
+                        "primary-fixed": "#d3e4ff",
+                        "surface": "#fcf9f8",
+                        "glass-border": "rgba(255, 255, 255, 0.3)",
+                        "on-primary": "#ffffff",
+                        "surface-tint": "#3a608d",
+                        "secondary-container": "#73cafe",
+                        "on-tertiary-container": "#e09152",
+                        "on-primary-container": "#81a6d7",
+                        "on-background": "#1b1c1c",
+                        "on-error": "#ffffff",
+                        "on-tertiary-fixed-variant": "#6f3800",
+                        "tertiary-container": "#5c2d00",
+                        "on-tertiary": "#ffffff",
+                        "on-surface": "#1b1c1c",
+                        "surface-dim": "#dcd9d9",
+                        "error-container": "#ffdad6",
+                        "surface-container-highest": "#e5e2e1",
+                        "secondary-fixed": "#c6e7ff",
+                        "glass-surface": "rgba(255, 255, 255, 0.7)",
+                        "error": "#ba1a1a",
+                        "primary-fixed-dim": "#a4c9fc",
+                        "inverse-primary": "#a4c9fc"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "section-gap": "100px",
+                        "gutter-mobile": "16px",
+                        "margin-desktop": "80px",
+                        "margin-mobile": "20px",
+                        "gutter-desktop": "24px",
+                        "unit": "4px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Hanken Grotesk"],
+                        "headline-lg": ["Noto Serif"],
+                        "title-lg": ["Hanken Grotesk"],
+                        "body-lg": ["Hanken Grotesk"],
+                        "display-lg": ["Noto Serif"],
+                        "headline-md": ["Noto Serif"],
+                        "headline-lg-mobile": ["Noto Serif"],
+                        "label-md": ["Hanken Grotesk"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-lg": ["40px", { "lineHeight": "1.2", "fontWeight": "600" }],
+                        "title-lg": ["20px", { "lineHeight": "1.4", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "display-lg": ["56px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-md": ["28px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "headline-lg-mobile": ["32px", { "lineHeight": "1.2", "fontWeight": "600" }],
+                        "label-md": ["14px", { "lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .hero-slide {
+            opacity: 0;
+            transition: opacity 1.5s ease-in-out;
+            position: absolute;
+            inset: 0;
+        }
+        .hero-slide.active {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md text-body-md antialiased selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopAppBar -->
+<!-- TopNavBar -->
+<header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-margin-desktop h-20 bg-glass-surface backdrop-blur-md shadow-sm border-b border-glass-border hidden md:flex">
+<div class="flex items-center gap-4 cursor-pointer scale-95 active:opacity-80 transition-transform">
+<img alt="Adrayah Travels Logo" class="h-12 w-12 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMy1YSouma0Zi_lb3P35GbxDZLIXerJdyZu7fTYeDucNe3ULgdW5KXkeyHdJVbUyX3ou5UCPnFS1IA_o5Ovklt5uG-Yu2UNS5f_04Crh38ovVLj5FHHSFZPvQhyNp4LK0x9iFWu1wdn4NsEnkbbO6I3rvybolURSKa7BHva3kC-IiDaqPZelESqQphOn3ruDHrXFFDRWkP8U9RwbjjEa4-w-kwethfoaXGhZupxw70rIMWa_t5JZRwJ2xadj2SdfRjHuf_CXTKau8">
+<span class="font-headline-md text-headline-md font-bold text-primary">Adrayah Travels</span>
+</div>
+<nav class="flex items-center gap-6"><div class="group relative h-full flex items-center">
+<a class="nav-link text-on-surface-variant hover:text-primary transition-colors font-title-lg text-title-lg py-2" data-nav="Home" href="index.html">Home</a>
+</div>
+<!-- North India Mega Menu -->
+<div class="group relative h-full flex items-center">
+<a class="nav-link text-on-surface-variant hover:text-primary transition-colors font-title-lg text-title-lg flex items-center gap-1 py-2" data-nav="North India" href="north-india.html">North India <span class="material-symbols-outlined text-sm transition-transform group-hover:rotate-180">expand_more</span></a>
+<div class="absolute top-full left-1/2 -translate-x-1/2 w-[600px] bg-white/95 backdrop-blur-md rounded-2xl shadow-2xl border border-glass-border p-6 opacity-0 translate-y-4 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300 z-[100] grid grid-cols-2 gap-4"><a class="flex items-center p-3 rounded-xl hover:bg-surface-muted transition-colors" href="himachal-explorer.html"><div class="flex items-baseline gap-2"><p class="font-bold text-primary">Himachal Pradesh</p><span class="text-xs text-on-surface-variant">- Mountains &amp; Adventure</span></div></a><a class="flex items-center p-3 rounded-xl hover:bg-surface-muted transition-colors" href="kashmir-escape.html"><div class="flex items-baseline gap-2"><p class="font-bold text-primary">Kashmir</p><span class="text-xs text-on-surface-variant">- Paradise on Earth</span></div></a><a class="flex items-center p-3 rounded-xl hover:bg-surface-muted transition-colors" href="#"><div class="flex items-baseline gap-2"><p class="font-bold text-primary">Uttarakhand</p><span class="text-xs text-on-surface-variant">- Lakes, Temples &amp; Nature</span></div></a><a class="flex items-center p-3 rounded-xl hover:bg-surface-muted transition-colors" href="#"><div class="flex items-baseline gap-2"><p class="font-bold text-primary">Golden Triangle</p><span class="text-xs text-on-surface-variant">- Delhi, Agra &amp; Jaipur</span></div></a></div>
+</div>
+<!-- South India Mega Menu -->
+<div class="group relative h-full flex items-center">
+<a class="nav-link text-on-surface-variant hover:text-primary transition-colors font-title-lg text-title-lg flex items-center gap-1 py-2" data-nav="South India" href="south-india.html">South India <span class="material-symbols-outlined text-sm transition-transform group-hover:rotate-180">expand_more</span></a>
+<div class="absolute top-full left-1/2 -translate-x-1/2 w-[600px] bg-white/95 backdrop-blur-md rounded-2xl shadow-2xl border border-glass-border p-6 opacity-0 translate-y-4 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300 z-[100] grid grid-cols-2 gap-4"><a class="flex items-center p-3 rounded-xl hover:bg-surface-muted transition-colors" href="kerala-retreat.html"><div class="flex items-baseline gap-2"><p class="font-bold text-primary">Kerala</p><span class="text-xs text-on-surface-variant">- Backwaters &amp; Hills</span></div></a><a class="flex items-center p-3 rounded-xl hover:bg-surface-muted transition-colors" href="#"><div class="flex items-baseline gap-2"><p class="font-bold text-primary">Goa</p><span class="text-xs text-on-surface-variant">- Beaches &amp; Nightlife</span></div></a><a class="flex items-center p-3 rounded-xl hover:bg-surface-muted transition-colors" href="#"><div class="flex items-baseline gap-2"><p class="font-bold text-primary">Tamil Nadu</p><span class="text-xs text-on-surface-variant">- Heritage &amp; Temples</span></div></a><a class="flex items-center p-3 rounded-xl hover:bg-surface-muted transition-colors" href="#"><div class="flex items-baseline gap-2"><p class="font-bold text-primary">Karnataka</p><span class="text-xs text-on-surface-variant">- Culture &amp; Coffee Trails</span></div></a></div>
+</div>
+<!-- East India Mega Menu -->
+<div class="group relative h-full flex items-center">
+<a href="east-india.html" class="nav-link text-on-surface-variant hover:text-primary transition-colors font-title-lg text-title-lg flex items-center gap-1 py-2" data-nav="East India">East India <span class="material-symbols-outlined text-sm transition-transform group-hover:rotate-180">expand_more</span></a>
+<div class="absolute top-full left-1/2 -translate-x-1/2 w-[600px] bg-white/95 backdrop-blur-md rounded-2xl shadow-2xl border border-glass-border p-6 opacity-0 translate-y-4 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300 z-[100] grid grid-cols-2 gap-4"><a class="flex items-center p-3 rounded-xl hover:bg-surface-muted transition-colors" href="#"><div class="flex items-baseline gap-2"><p class="font-bold text-primary">Darjeeling</p><span class="text-xs text-on-surface-variant">- Tea Estates &amp; Toy Train</span></div></a><a class="flex items-center p-3 rounded-xl hover:bg-surface-muted transition-colors" href="#"><div class="flex items-baseline gap-2"><p class="font-bold text-primary">Gangtok</p><span class="text-xs text-on-surface-variant">- Monasteries &amp; Mountains</span></div></a><a class="flex items-center p-3 rounded-xl hover:bg-surface-muted transition-colors" href="meghalaya-discovery.html"><div class="flex items-baseline gap-2"><p class="font-bold text-primary">Meghalaya</p><span class="text-xs text-on-surface-variant">- Waterfalls &amp; Living Root Bridges</span></div></a><a class="flex items-center p-3 rounded-xl hover:bg-surface-muted transition-colors" href="#"><div class="flex items-baseline gap-2"><p class="font-bold text-primary">Odisha</p><span class="text-xs text-on-surface-variant">- Temples &amp; Coastal Heritage</span></div></a></div>
+</div>
+<!-- West India Mega Menu -->
+<div class="group relative h-full flex items-center">
+<a href="west-india.html" class="nav-link text-on-surface-variant hover:text-primary transition-colors font-title-lg text-title-lg flex items-center gap-1 py-2" data-nav="West India">West India <span class="material-symbols-outlined text-sm transition-transform group-hover:rotate-180">expand_more</span></a>
+<div class="absolute top-full right-0 w-[600px] bg-white/95 backdrop-blur-md rounded-2xl shadow-2xl border border-glass-border p-6 opacity-0 translate-y-4 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300 z-[100] grid grid-cols-2 gap-4"><a class="flex items-center p-3 rounded-xl hover:bg-surface-muted transition-colors" href="rajasthan-royal-circuit.html"><div class="flex items-baseline gap-2"><p class="font-bold text-primary">Rajasthan</p><span class="text-xs text-on-surface-variant">- Forts &amp; Royal Palaces</span></div></a><a class="flex items-center p-3 rounded-xl hover:bg-surface-muted transition-colors" href="#"><div class="flex items-baseline gap-2"><p class="font-bold text-primary">Gujarat</p><span class="text-xs text-on-surface-variant">- Wildlife &amp; Heritage</span></div></a><a class="flex items-center p-3 rounded-xl hover:bg-surface-muted transition-colors" href="#"><div class="flex items-baseline gap-2"><p class="font-bold text-primary">Maharashtra</p><span class="text-xs text-on-surface-variant">- Cities &amp; Hill Escapes</span></div></a></div>
+</div>
+<a class="nav-link text-on-surface-variant hover:text-primary transition-colors font-title-lg text-title-lg py-2" data-nav="Special Tours" href="special-tours.html">Special Tours</a>
+<a class="nav-link text-on-surface-variant hover:text-primary transition-colors font-title-lg text-title-lg py-2" data-nav="Contact" href="#">Contact</a></nav>
+<button class="bg-on-tertiary-container text-white px-6 py-2 rounded-full font-label-md text-label-md hover:opacity-90 transition-opacity shadow-lg shadow-on-tertiary-container/20" onclick="openEnquiryModal('General')">Enquire Now</button>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    let path = window.location.pathname.split('/').filter(Boolean).pop() || 'index';
+    path = path.replace('.html', '');
+    
+    const activeMap = {
+        'index': 'Home',
+        'north-india': 'North India',
+        'kashmir-escape': 'North India',
+        'himachal-explorer': 'North India',
+        'south-india': 'South India',
+        'kerala-retreat': 'South India',
+        'east-india': 'East India',
+        'meghalaya-discovery': 'East India',
+        'west-india': 'West India',
+        'rajasthan-royal-circuit': 'West India'
+    };
+    
+    const activeTarget = activeMap[path];
+    
+    document.querySelectorAll('.nav-link').forEach(link => {
+        // Reset all
+        link.classList.remove('text-on-secondary-container', 'border-b-2', 'border-on-tertiary-container', 'pb-1', 'font-bold', 'hover:text-on-tertiary-container');
+        link.classList.add('text-on-surface-variant', 'hover:text-primary', 'py-2');
+        
+        // Apply active
+        if (activeTarget && link.getAttribute('data-nav') === activeTarget) {
+            link.classList.remove('text-on-surface-variant', 'hover:text-primary', 'py-2');
+            link.classList.add('text-on-secondary-container', 'border-b-2', 'border-on-tertiary-container', 'pb-1', 'font-bold', 'hover:text-on-tertiary-container');
+        }
+    });
+});
+</script>
+</header>
+<!-- Mobile Top Header (Simplified) -->
+<header class="md:hidden fixed top-0 left-0 w-full z-50 flex justify-between items-center px-margin-mobile h-16 bg-glass-surface backdrop-blur-md shadow-sm border-b border-glass-border">
+<div class="flex items-center gap-2">
+<img alt="Adrayah Travels Logo" class="h-8 w-8 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMy1YSouma0Zi_lb3P35GbxDZLIXerJdyZu7fTYeDucNe3ULgdW5KXkeyHdJVbUyX3ou5UCPnFS1IA_o5Ovklt5uG-Yu2UNS5f_04Crh38ovVLj5FHHSFZPvQhyNp4LK0x9iFWu1wdn4NsEnkbbO6I3rvybolURSKa7BHva3kC-IiDaqPZelESqQphOn3ruDHrXFFDRWkP8U9RwbjjEa4-w-kwethfoaXGhZupxw70rIMWa_t5JZRwJ2xadj2SdfRjHuf_CXTKau8">
+<span class="font-headline-md text-headline-md font-bold text-primary text-xl">Adrayah</span>
+</div>
+<button class="text-primary p-2">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative w-full h-[80vh] md:h-[90vh] overflow-hidden bg-primary">
+<div class="relative w-full h-full" id="hero-slides"><div class="hero-slide active"><img alt="Dawki River" class="w-full h-full object-cover object-center" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpK2WrTRJaaAadYF2q4SWU-M4RI3Hz4mSqMol9gHfXtHzR9ELDDPJG4Eevq_-fVuermkdzZbyufgBeIzcMae5K9a0uPdi8SC8PTIMoCt_9dR3cFKvU2xuYAeCZD_DzplaPJA5hZCUMHDwRBs88W7A2NzqZ71dD-Eb3ffkoCaEOpGaJQNyQjKuHwIeC6urhCi9ED5dHOhbuHUTvI2PpKWUazimOlh5nFPa_iRLA0PBY71R6OESPU7EeYjc3ytOYAP5TTxTUO5aPTP6s"></div><div class="hero-slide"><img alt="Living Root Bridge" class="w-full h-full object-cover object-center" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVKJW6slfNmG15Y12H6FBKdESacIH_vVF020wrXrqUfsVkF7lSmOeClpNo12HptRknkNhUTbXNmOLzhMG9UECmjU0J989uWd85CV3NUuaObjnSvQ5JSSmouZ766CZ19vudErRlnmZ36dzqNCyAxxic15vkPUNmtg6p1jusJUn4rTVmcvFwR9uxx7jGLjQb0ReGqSrNKODs5jNor6Bjkmkn3FVXq1gg4xULndUAZSHFWsN4X9ov4wqnlTQGFMO75IonW9cV-LdNP5yl"></div><div class="hero-slide"><img alt="Shillong" class="w-full h-full object-cover object-center" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWQr9EohL1Oz9fSbwyDF9vsuMPGHKcz0HW22_JY-NEagufZQdlxOeS9bPyhv8U7QVTQy737QoGBJpSp1etW8oTpwKewblJYXCONDoBDtMP0RtpvnTjeKS_zwW05HbYctedzqF-hOVlohXbSNbzL7AoFkyQYQ-9RkbEanWGlwdWNBgLibEPfiS-Rk_nNPmKagIdwx18zfpjjXqFIiooGAxpRq2PwvIjh4l1PEtGCdFAporZVnyjuzGcBeQoa3gFFNSZ_7HuQRGCDtue"></div><div class="hero-slide"><img alt="Cherrapunji" class="w-full h-full object-cover object-center" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfD_I8i4QkYXYlUtofR4x4o3S5cBrIUnLl5O_92E_zJVCgaW7rIGKIcVRrrNsZJOlXONX0XlNehKLKVULvI_gT3DuoNy2au3K8GfylgoEGWcqyV-4b9ENghaCSzQZyYecyuzE2K1dP1ixzqRZqZpXRGzL9l-J9JavDAMQ7fWkxPQed42zLpS1h64rVzRE1D5ve1n1VOOVsv8yXxXwM2NTuzl5EQRayd12cmz7LnTPYaEJ5_-Sx70r-TdjWMc2MTJl17Le677GyKviF"></div><div class="hero-slide"><img alt="Gangtok Monasteries" class="w-full h-full object-cover object-center" src="https://lh3.googleusercontent.com/aida-public/AB6AXuApqzYNldjqjhEsTL-EFDCPlcOhoEulBVkf2js0QVcTRuq5dmxsu-Qfb5Q-HPYpQh6By0rvjYY4AScXPhK3y6FXQE9XWYaFe4wkFEWHZrGUSFraRUPB0jOkXgF4l_0OHC_t1-T0onafjCU4h3yIGOqiy1NxFHIq8j9icCw1z2NSXTh8HWcMYP9kPv3D1tDOB3i-7ALXR6r6slfshBFsChwB3ji1fdDtJVS01z50_XZ5e7eHCfg8SiGvaOoFgHvhQmPlk7SYkq5FTZ9J"></div><div class="hero-slide"><img alt="Kaziranga National Park" class="w-full h-full object-cover object-center" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcDBR4p-GLoZTzEFyviZyDcq5Tu6HskdRIKRolgvdThMRckTzhVYy6GyPDjGdgFU8D8aDD0ytCFIAqNQ473QnUL16_ftkXCrXYsZqVSFJ1J_BJovAWmukULz0_rDOEf2asa4g5q2IkHhGm2RpPEy-NMSS7XMjQeNWYr5kStFCg-KFVlL6TpnECui29gF1RnbSVkR1QxvHuQhqphzhRixGCImdY6e99TSnllH5Y8hQO1JA9NCZSLlXjyjGDZ0zSV-9QS-ubuqfQ7Nyi"></div><div class="hero-slide"><img alt="Konark Sun Temple" class="w-full h-full object-cover object-center" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqN2cBBm55fK4AXYDKZuRZsR7JttjYbz6DQW4EVx7S0hVK60_2RUA_r9hGB9zajc3nyZIrswL4noV4zVEXAYKjvVl3z6sOSV-raI4QTL-FMFge9cQcZ2XlqG55ms2C1Zb1-n7nUmaCQeUT6Ir2JmuqQW-O9Voq8ik_L7hyzaRIEI59H1Q1B6OT1Q1G3pFeNasZcHTexJT4TDb5duI_Skx9dKSdKrNeXZXYo8ndZd8LuVv9xXYqphVvekhTKTvfZzAGpjz4-IcnkdfE"></div><div class="hero-slide"><img alt="Puri Beach" class="w-full h-full object-cover object-center" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDy8MO8WlNdSosbI0awhnSi1JWVvZ1gwEoZiGAF0i4xF4Gw3AE96Pcq9sLxpceqA58FlYj-JA2fPsj5VtTWt0MCZnLgsCbvP-aPVjRdBmZaSX5EAnXP1boFnwep6074RxYmq95O1ryGeDrmIwBq9tEZwbSjsqWa56b7mYFaBEN53_arSeICjiTcY2UxZN-vIwlMHrooyA5hJ4iw6i30IAKeWyIpjf-IPqjYImeTJTucq9tkkVx1EsVn3tphEjTNKQxpTiWhl_IiVhNm"></div></div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/30 to-transparent"></div>
+<div class="absolute inset-0 flex flex-col justify-center items-center text-center px-margin-mobile md:px-margin-desktop z-10">
+<div class="max-w-4xl animate-fade-in-up">
+<h1 class="font-display-lg text-display-lg md:text-[64px] text-on-primary font-bold mb-4 leading-tight">East India</h1>
+<p class="font-headline-md text-headline-md text-on-primary/90 mb-8 tracking-wide">Mystical Horizons &amp; Hidden Wonders</p>
+<div class="flex flex-col md:flex-row gap-4 justify-center">
+<button class="w-full md:w-56 h-[64px] bg-[#D28A4C] text-white rounded-full font-title-lg text-title-lg hover:opacity-90 transition-all active:scale-95 flex items-center justify-center gap-3 shadow-lg">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">chat</span>
+                        Chat on WhatsApp
+                    </button>
+<button class="w-full md:w-56 h-[64px] border-2 border-[#D28A4C] text-[#D28A4C] rounded-full font-title-lg text-title-lg hover:bg-[#D28A4C] hover:text-white transition-all active:scale-95 flex items-center justify-center">
+                        Get Personalized Quote
+                    </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Signature Experiences (Bento Grid) -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+<!-- Left Content -->
+<div class="flex flex-col">
+<h2 class="font-display-lg text-headline-lg md:text-display-lg text-primary mb-6">Discover the Soul of the East</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8 leading-relaxed">
+        East India is a realm of mystical horizons, where ancient traditions breathe through emerald landscapes. From the living root bridges of Meghalaya to the sacred monasteries of Sikkim, every path tells a story of resilience, spirituality, and timeless natural beauty. Experience a journey curated with Adrayah's signature touch.
+      </p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+<!-- Feature Card 1 -->
+<div class="p-6 bg-surface-container-low rounded-2xl border border-outline-variant/50">
+<span class="material-symbols-outlined text-secondary mb-3">temple_buddhist</span>
+<h4 class="font-title-lg text-primary text-sm mb-1">Heritage Stays</h4>
+<p class="text-xs text-on-surface-variant">Monasteries &amp; Luxury Retreats</p>
+</div>
+<!-- Feature Card 2 -->
+<div class="p-6 bg-surface-container-low rounded-2xl border border-outline-variant/50">
+<span class="material-symbols-outlined text-secondary mb-3">hiking</span>
+<h4 class="font-title-lg text-primary text-sm mb-1">Guided Treks</h4>
+<p class="text-xs text-on-surface-variant">Expert Local Explorers</p>
+</div>
+</div>
+<a class="flex items-center gap-2 text-secondary font-label-md hover:gap-3 transition-all" href="#">
+        Learn more about our approach
+        <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Right Image -->
+<div class="relative">
+<div class="rounded-2xl overflow-hidden shadow-lg"><img src="assets/images/living-root-bridge.jpg" alt="Living Root Bridge in Cherrapunji" class="w-full h-full object-cover"></div>
+</div>
+</div>
+</section><section class="py-section-gap px-margin-mobile md:px-margin-desktop max-w-screen-2xl mx-auto"><div class="px-margin-mobile md:px-margin-desktop max-w-7xl mx-auto"><div class="text-center mb-16"><h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-4">Signature Experiences</h2><p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Curated encounters designed to immerse you in the authentic soul of the East.</p></div><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"><!-- Card 1 --><div class="bento-card bg-surface rounded-2xl overflow-hidden border border-outline-variant shadow-sm flex flex-col group"><div class="h-64 overflow-hidden relative"><img alt="Darjeeling Tea Gardens" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="assets/images/darjeeling-tea-gardens.jpg"></div><div class="p-6 flex flex-col flex-grow"><h3 class="font-title-lg text-title-lg text-primary mb-2">Darjeeling Himalayan Railway</h3><p class="font-label-md text-label-md text-secondary mb-4">Darjeeling, West Bengal</p><p class="font-body-md text-body-md text-on-surface-variant flex-grow">Experience the charm of the 'Toy Train' as it winds through emerald tea gardens with views of the majestic Kanchenjunga.</p></div></div><!-- Card 2 --><div class="bento-card bg-surface rounded-2xl overflow-hidden border border-outline-variant shadow-sm flex flex-col group"><div class="h-64 overflow-hidden relative"><img alt="Living Root Bridge" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="assets/images/living-root-bridge.jpg"></div><div class="p-6 flex flex-col flex-grow"><h3 class="font-title-lg text-title-lg text-primary mb-2">Living Root Bridge Trek</h3><p class="font-label-md text-label-md text-secondary mb-4">Cherrapunji, Meghalaya</p><p class="font-body-md text-body-md text-on-surface-variant flex-grow">Trek through lush rainforests to witness ancient bio-engineering marvels grown from the roots of rubber trees.</p></div></div><!-- Card 3 --><div class="bento-card bg-surface rounded-2xl overflow-hidden border border-outline-variant shadow-sm flex flex-col group"><div class="h-64 overflow-hidden relative"><img alt="Kaziranga Rhino" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="assets/images/kaziranga-rhino.jpg"></div><div class="p-6 flex flex-col flex-grow"><h3 class="font-title-lg text-title-lg text-primary mb-2">Kaziranga Rhino Safari</h3><p class="font-label-md text-label-md text-secondary mb-4">Kaziranga, Assam</p><p class="font-body-md text-body-md text-on-surface-variant flex-grow">Embark on a wildlife adventure to spot the rare one-horned rhinoceros in the vast grasslands of the Brahmaputra valley.</p></div></div><!-- Card 4 --><div class="bento-card bg-surface rounded-2xl overflow-hidden border border-outline-variant shadow-sm flex flex-col group"><div class="h-64 overflow-hidden relative"><img alt="Tawang Monastery" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="assets/images/tawang-monastery.jpg"></div><div class="p-6 flex flex-col flex-grow"><h3 class="font-title-lg text-title-lg text-primary mb-2">Tawang Monastery Visit</h3><p class="font-label-md text-label-md text-secondary mb-4">Tawang, Arunachal Pradesh</p><p class="font-body-md text-body-md text-on-surface-variant flex-grow">Discover spiritual peace at India's largest monastery, perched high in the Himalayas amidst colorful prayer flags.</p></div></div><!-- Card 5 --><div class="bento-card bg-surface rounded-2xl overflow-hidden border border-outline-variant shadow-sm flex flex-col group"><div class="h-64 overflow-hidden relative"><img alt="Dawki River" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="assets/images/dawki-river.jpg"></div><div class="p-6 flex flex-col flex-grow"><h3 class="font-title-lg text-title-lg text-primary mb-2">Dawki River Boating</h3><p class="font-label-md text-label-md text-secondary mb-4">Dawki, Meghalaya</p><p class="font-body-md text-body-md text-on-surface-variant flex-grow">Glide over the crystal-clear turquoise waters of the Umngot River, where boats appear to float in mid-air.</p></div></div><!-- Card 6 --><div class="bento-card bg-surface rounded-2xl overflow-hidden border border-outline-variant shadow-sm flex flex-col group"><div class="h-64 overflow-hidden relative"><img alt="Konark Sun Temple" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="assets/images/konark-sun-temple.jpg"></div><div class="p-6 flex flex-col flex-grow"><h3 class="font-title-lg text-title-lg text-primary mb-2">Konark Sun Temple</h3><p class="font-label-md text-label-md text-secondary mb-4">Konark, Odisha</p><p class="font-body-md text-body-md text-on-surface-variant flex-grow">Marvel at the architectural brilliance of this 13th-century UNESCO World Heritage site, shaped like a giant stone chariot.</p></div></div></div></div></section>
+<!-- Itinerary Section -->
+<section class="py-section-gap bg-background">
+<div class="max-w-4xl mx-auto px-margin-desktop">
+<h2 class="font-headline-lg text-headline-lg text-primary text-center mb-4">Detailed 7-Day Sikkim Spectacular</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant text-center mb-12">A meticulously planned journey through the mystical landscapes and heritage of the Himalayan kingdom.</p>
+<div class="space-y-4">
+<!-- Day 1 -->
+<details class="group bg-surface-container-low rounded-2xl border border-outline-variant/50 overflow-hidden">
+<summary class="flex justify-between items-center p-6 cursor-pointer hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-6">
+<span class="w-12 h-12 rounded-full bg-primary text-on-primary flex items-center justify-center font-title-lg">01</span>
+<h4 class="font-title-lg text-primary">Day 1: Arrival in Gangtok &amp; Sunset at MG Marg</h4>
+</div>
+<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="px-24 pb-8 text-on-surface-variant">
+<p class="mb-4">Arrive at Bagdogra Airport/NJP Station where our premium representative will warmly welcome you. Transfer to your luxury hotel in Gangtok. In the late afternoon, enjoy a stroll through the vibrant, pedestrian-only MG Marg, taking in the local culture and mountain air.</p>
+<ul class="space-y-2">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span> Airport/Station transfer in premium vehicle</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span> Welcome tea on arrival</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span> Evening walk at MG Marg</li>
+</ul>
+</div>
+</details>
+<!-- Day 2 -->
+<details class="group bg-surface-container-low rounded-2xl border border-outline-variant/50 overflow-hidden">
+<summary class="flex justify-between items-center p-6 cursor-pointer hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-6">
+<span class="w-12 h-12 rounded-full bg-surface-container-highest text-primary flex items-center justify-center font-title-lg">02</span>
+<h4 class="font-title-lg text-primary">Day 2: Gangtok Local Sightseeing &amp; Spiritual Discovery</h4>
+</div>
+<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="px-24 pb-8 text-on-surface-variant">
+<p class="mb-4">Explore the spiritual heart of Sikkim. Visit the iconic Rumtek Monastery, the Enchey Monastery, and the Namgyal Institute of Tibetology. Witness the serene beauty of the Do Drul Chorten Stupa.</p>
+<ul class="space-y-2">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span> Guided monastery tour</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span> Visit to Flower Exhibition Centre</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span> Traditional Sikkimese lunch</li>
+</ul>
+</div>
+</details>
+<!-- Day 3 -->
+<details class="group bg-surface-container-low rounded-2xl border border-outline-variant/50 overflow-hidden">
+<summary class="flex justify-between items-center p-6 cursor-pointer hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-6">
+<span class="w-12 h-12 rounded-full bg-surface-container-highest text-primary flex items-center justify-center font-title-lg">03</span>
+<h4 class="font-title-lg text-primary">Day 3: Glacial Wonders: Tsomgo Lake &amp; Baba Mandir</h4>
+</div>
+<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="px-24 pb-8 text-on-surface-variant">
+<p class="mb-4">Embark on a scenic drive to the turquoise Tsomgo Lake, situated at 12,400 ft. Continue to the legendary Baba Harbhajan Singh Mandir, a site of deep local reverence.</p>
+<ul class="space-y-2">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span> Scenic Himalayan drive</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span> Yak ride experience at Tsomgo Lake</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span> Visit to Baba Mandir</li>
+</ul>
+</div>
+</details>
+<!-- Day 4 -->
+<details class="group bg-surface-container-low rounded-2xl border border-outline-variant/50 overflow-hidden">
+<summary class="flex justify-between items-center p-6 cursor-pointer hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-6">
+<span class="w-12 h-12 rounded-full bg-surface-container-highest text-primary flex items-center justify-center font-title-lg">04</span>
+<h4 class="font-title-lg text-primary">Day 4: Journey to the North: Gangtok to Lachen</h4>
+</div>
+<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="px-24 pb-8 text-on-surface-variant">
+<p class="mb-4">Drive through the rugged beauty of North Sikkim. Witness cascading waterfalls like Seven Sister Waterfalls and Naga Falls. Arrive at the serene mountain village of Lachen, the gateway to the high altitudes.</p>
+<ul class="space-y-2">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span> Drive through scenic mountain passes</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span> Stop at Singhik Viewpoint</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span> Overnight stay in a premium mountain lodge</li>
+</ul>
+</div>
+</details>
+<!-- Day 5 -->
+<details class="group bg-surface-container-low rounded-2xl border border-outline-variant/50 overflow-hidden">
+<summary class="flex justify-between items-center p-6 cursor-pointer hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-6">
+<span class="w-12 h-12 rounded-full bg-surface-container-highest text-primary flex items-center justify-center font-title-lg">05</span>
+<h4 class="font-title-lg text-primary">Day 5: Sacred Heights: Gurudongmar Lake &amp; Lachung</h4>
+</div>
+<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="px-24 pb-8 text-on-surface-variant">
+<p class="mb-4">An early morning expedition to the sacred Gurudongmar Lake, one of the highest lakes in the world, surrounded by snow-clad peaks. Later, transfer to the picturesque village of Lachung.</p>
+<ul class="space-y-2">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span> Visit to Gurudongmar Lake (17,800 ft)</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span> Drive through the Cold Desert of Tibet</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span> Evening relaxation in Lachung</li>
+</ul>
+</div>
+</details>
+<!-- Day 6 -->
+<details class="group bg-surface-container-low rounded-2xl border border-outline-variant/50 overflow-hidden">
+<summary class="flex justify-between items-center p-6 cursor-pointer hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-6">
+<span class="w-12 h-12 rounded-full bg-surface-container-highest text-primary flex items-center justify-center font-title-lg">06</span>
+<h4 class="font-title-lg text-primary">Day 6: Valley of Flowers: Yumthang &amp; Zero Point</h4>
+</div>
+<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="px-24 pb-8 text-on-surface-variant">
+<p class="mb-4">Discover the 'Valley of Flowers' at Yumthang, wrapped in snow-capped peaks and vibrant alpine flora. Optional excursion to Zero Point for a pristine snow experience. Descend back to Gangtok in the evening.</p>
+<ul class="space-y-2">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span> Visit to Yumthang Valley</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span> Hot Spring visit</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span> Drive back to Gangtok</li>
+</ul>
+</div>
+</details>
+<!-- Day 7 -->
+<details class="group bg-surface-container-low rounded-2xl border border-outline-variant/50 overflow-hidden">
+<summary class="flex justify-between items-center p-6 cursor-pointer hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-6">
+<span class="w-12 h-12 rounded-full bg-surface-container-highest text-primary flex items-center justify-center font-title-lg">07</span>
+<h4 class="font-title-lg text-primary">Day 7: Departure with Memories</h4>
+</div>
+<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="px-24 pb-8 text-on-surface-variant">
+<p class="mb-4">Enjoy a final mountain breakfast before your transfer to the airport/station with cherished memories of the mystical East.</p>
+<ul class="space-y-2">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span> Departure transfer in premium vehicle</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span> Souvenir gift from Adrayah Travels</li>
+</ul>
+</div>
+</details>
+</div>
+</div>
+</section>
+</main>
+<div class="fixed inset-0 z-[100] flex items-center justify-center bg-black/60 backdrop-blur-sm p-4 hidden" id="modal-container">
+<!-- Callback Modal -->
+<div class="bg-white rounded-2xl w-full max-w-md p-8 shadow-2xl transform scale-95 opacity-0 transition-all duration-300 hidden relative" id="callback-modal">
+<button class="absolute top-4 right-4 text-on-surface-variant hover:text-primary transition-colors" onclick="closeModals()">
+<span class="material-symbols-outlined">close</span>
+</button>
+<h3 class="font-headline-md font-serif text-primary mb-2">Request a Callback</h3>
+<p class="font-body-md text-on-surface-variant mb-6">Leave your details and our luxury travel experts will get in touch shortly.</p>
+<div id="enquiry-form-container"></div>
+</div>
+<!-- Enquiry Modal -->
+<div class="bg-white rounded-2xl w-full max-w-md p-8 shadow-2xl transform scale-95 opacity-0 transition-all duration-300 hidden relative" id="enquiry-modal">
+<button class="absolute top-4 right-4 text-on-surface-variant hover:text-primary transition-colors" onclick="closeModals()">
+<span class="material-symbols-outlined">close</span>
+</button>
+<h3 class="font-headline-md font-serif text-primary mb-2" id="enquiry-title">Enquire Now</h3>
+<p class="font-body-md text-on-surface-variant mb-6">Start planning your bespoke journey to <span class="font-bold text-primary" id="enquiry-destination">India</span>.</p>
+<div id="enquiry-form-container"></div>
+</div>
+<!-- Exit Intent Modal -->
+<div class="bg-white rounded-2xl w-full max-w-lg p-0 overflow-hidden shadow-2xl transform transition-all duration-300 relative scale-95 opacity-0 hidden" id="exit-modal">
+<button class="absolute top-4 right-4 text-white hover:text-gray-200 transition-colors z-10 bg-black/20 rounded-full p-1" onclick="closeModals()">
+<span class="material-symbols-outlined">close</span>
+</button>
+<div class="h-48 relative">
+<img alt="Luxury Travel" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA90LnVZ72radsn4MntqHD9qPvGEvtHEmhNGzZw-hUvJVp1ZoR-5NdPqTd4HAhEipr3BtLbMAwQN3J30Dkn1oyRzEawmrMOq5MsZVUqr-hjmc6zakPjz0Cvg61jus57R2_yf-dqHfMk3xGoltRp6aeM7RNMCRaeXG95tHq-ZlDthPaB5QgeW8Cpoq5WLgcgO7tSK_iGjD0P47ryJ6XHCkELyVS0Lsrpc4GZHZLm6yVbL8JKZ7ShVRbq4vnJW1S7lsOknq8dlthTvis">
+<div class="absolute inset-0 bg-primary/60"></div>
+<div class="absolute inset-0 flex flex-col items-center justify-center text-white p-6 text-center">
+<h3 class="font-display-lg font-serif text-3xl mb-2">Wait! Don't Miss Out</h3>
+<p class="font-body-md opacity-90">Unlock an exclusive offer for your first journey.</p>
+</div>
+</div>
+<div class="p-8 text-center flex flex-col items-center">
+<p class="font-body-lg text-on-surface-variant mb-6">Get a <span class="font-bold text-primary text-xl">Special Discount</span> on your first booking when you reach out via WhatsApp today.</p>
+<a class="w-full bg-success-green text-white py-4 rounded-full font-label-md hover:bg-opacity-90 transition-all flex items-center justify-center gap-2 mb-3" href="https://wa.me/919654182903?text=Hello Adrayah Travels, I'd like to claim my special discount for a new booking!" target="_blank">
+<span class="material-symbols-outlined">chat</span>
+                Claim Offer on WhatsApp
+            </a>
+<button class="text-on-surface-variant font-label-md hover:underline text-sm" onclick="closeModals()">No thanks, I'll pay full price</button>
+</div>
+</div>
+</div>
+<!-- Scripts for Interactions -->
+<script>
+    // Sticky Strip Scroll
+    window.addEventListener('scroll', () => {
+        const strip = document.getElementById('conversion-strip');
+        if (window.scrollY > 500) {
+            strip.classList.remove('translate-y-full');
+        } else {
+            strip.classList.add('translate-y-full');
+        }
+    });
+
+    // Modals Logic
+    const modalContainer = document.getElementById('modal-container');
+    const callbackModal = document.getElementById('callback-modal');
+    const enquiryModal = document.getElementById('enquiry-modal');
+    const exitModal = document.getElementById('exit-modal');
+    
+    function showModal(modalEl) {
+        modalContainer.classList.remove('hidden');
+        modalEl.classList.remove('hidden');
+        // Small delay to allow display:block to apply before animating opacity/scale
+        setTimeout(() => {
+            modalEl.classList.remove('scale-95', 'opacity-0');
+            modalEl.classList.add('scale-100', 'opacity-100');
+        }, 10);
+    }
+
+    function closeModals() {
+        [callbackModal, enquiryModal, exitModal].forEach(m => {
+            m.classList.remove('scale-100', 'opacity-100');
+            m.classList.add('scale-95', 'opacity-0');
+        });
+        setTimeout(() => {
+            modalContainer.classList.add('hidden');
+            [callbackModal, enquiryModal, exitModal].forEach(m => m.classList.add('hidden'));
+        }, 300);
+    }
+
+    function openCallbackModal() { showModal(callbackModal); }
+    
+    function openEnquiryModal(destination) {
+        document.getElementById('enquiry-destination').textContent = destination;
+        showModal(enquiryModal);
+    }
+
+    // Close on background click
+    modalContainer.addEventListener('click', (e) => {
+        if (e.target === modalContainer) closeModals();
+    });
+
+    // Exit Intent Logic
+    let exitShown = false;
+    document.addEventListener('mouseleave', (e) => {
+        if (e.clientY < 0 && !exitShown) {
+            exitShown = true;
+            showModal(exitModal);
+        }
+    });
+</script>
+<!-- Footer -->
+<footer class="w-full pt-16 pb-16 bg-[#0A2540] text-white">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-8">
+    <!-- Brand Column -->
+    <div class="flex flex-col gap-4">
+        <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full border border-white/30 flex items-center justify-center flex-shrink-0">
+                <span class="material-symbols-outlined text-[20px] text-white/80">explore</span>
+            </div>
+            <div class="font-serif leading-tight">
+                <div class="font-headline-md text-[28px] font-bold tracking-wide">Adrayah</div>
+                <div class="font-headline-md text-[28px] font-bold tracking-wide">Travels</div>
+            </div>
+        </div>
+        <p class="font-body-sm text-sm mt-1 text-white/90">à¤…à¤¦à¥à¤µà¤¯: - à¤šà¤²à¥‹ à¤šà¤²à¥‡à¤‚....</p>
+        <p class="font-body-sm text-[15px] opacity-80 leading-relaxed mt-2 text-white/90">
+            Crafting unforgettable journeys across Incredible India through personalized itineraries, curated experiences, and exceptional hospitality.
+        </p>
+        <div class="flex items-center gap-2 mt-4 text-[15px] opacity-90 text-white/90">
+            <span class="material-symbols-outlined text-[20px]">location_on</span>
+            <span>Delhi, India</span>
+        </div>
+    </div>
+
+    <!-- Contact Us Column -->
+    <div class="flex flex-col gap-6">
+        <h4 class="font-title-lg text-lg font-bold tracking-wide">Contact Us</h4>
+        <div class="flex flex-col gap-4">
+            <div class="flex items-center gap-3 text-white/80 hover:text-white transition-colors cursor-pointer">
+                <span class="material-symbols-outlined text-[20px]">chat</span>
+                <span class="font-body-md text-[15px]">+91 9654182903</span>
+            </div>
+            <div class="flex items-center gap-3 text-white/80 hover:text-white transition-colors cursor-pointer">
+                <span class="material-symbols-outlined text-[20px]">chat</span>
+                <span class="font-body-md text-[15px]">+91 7982037419</span>
+            </div>
+            <div class="flex items-center gap-3 text-white/80 hover:text-white transition-colors cursor-pointer">
+                <span class="material-symbols-outlined text-[20px]">mail</span>
+                <span class="font-body-md text-[15px]">info@adrayahtravels.com</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quick Links Column -->
+    <div class="flex flex-col gap-6">
+        <h4 class="font-title-lg text-lg font-bold tracking-wide">Quick Links</h4>
+        <div class="flex flex-col gap-3">
+            <a href="north-india.html" class="font-body-md text-[15px] text-white/80 hover:text-white transition-colors">North India</a>
+            <a href="south-india.html" class="font-body-md text-[15px] text-white/80 hover:text-white transition-colors">South India</a>
+            <a href="east-india.html" class="font-body-md text-[15px] text-white/80 hover:text-white transition-colors">East India</a>
+            <a href="west-india.html" class="font-body-md text-[15px] text-white/80 hover:text-white transition-colors">West India</a>
+            <a href="special-tours.html" class="font-body-md text-[15px] text-white/80 hover:text-white transition-colors">Special Tours</a>
+            <a href="contact.html" class="font-body-md text-[15px] text-white/80 hover:text-white transition-colors">Contact Us</a>
+        </div>
+    </div>
+
+    <!-- Follow Us Column -->
+    <div class="flex flex-col gap-6">
+        <h4 class="font-title-lg text-lg font-bold tracking-wide">Follow Us</h4>
+        <div class="flex gap-4">
+            <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors">
+                <span class="material-symbols-outlined text-[20px] text-white/90">public</span>
+            </a>
+            <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors">
+                <span class="material-symbols-outlined text-[20px] text-white/90">share</span>
+            </a>
+            <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors">
+                <span class="material-symbols-outlined text-[20px] text-white/90">photo_library</span>
+            </a>
+        </div>
+        <div class="flex flex-col gap-2 mt-2">
+            <p class="font-body-md text-[15px] text-white/80">Instagram: @adrayahtravel</p>
+            <p class="font-body-md text-[15px] text-white/80">Facebook: @adrayahtravel</p>
+        </div>
+    </div>
+</div>
+</footer>
+<script>
+        // Simple slideshow script for Hero
+        document.addEventListener('DOMContentLoaded', () => {
+            const slides = document.querySelectorAll('.hero-slide');
+            let currentSlide = 0;
+
+            if(slides.length > 1) {
+                setInterval(() => {
+                    slides[currentSlide].classList.remove('active');
+                    currentSlide = (currentSlide + 1) % slides.length;
+                    slides[currentSlide].classList.add('active');
+                }, 5000);
+            }
+        });
+    </script>
+
+
+
+
+
+
+
+
+
+<!-- BottomNavBar (Mobile Only) -->
+<div class="md:hidden fixed bottom-6 right-6 z-50 flex gap-4">
+<button class="flex items-center gap-2 text-primary dark:text-primary-fixed-dim px-6 py-3 bg-glass-surface dark:bg-primary/90 backdrop-blur-lg border border-glass-border shadow-lg rounded-full font-label-md text-label-md hover:scale-105 transition-transform duration-300">
+<span class="material-symbols-outlined">chat</span>
+<span class="hidden sm:inline">WhatsApp</span>
+</button>
+<button class="flex items-center gap-2 text-primary dark:text-primary-fixed-dim px-6 py-3 bg-glass-surface dark:bg-primary/90 backdrop-blur-lg border border-glass-border shadow-lg rounded-full font-label-md text-label-md hover:scale-105 transition-transform duration-300">
+<span class="material-symbols-outlined">call</span>
+<span class="hidden sm:inline">Call Support</span>
+</button>
+</div>
+
+
+
+
+    <script src="assets/js/enquiry-system.js"></script>
+</body></html>
+
+
+
+
+
+
+

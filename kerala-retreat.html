@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en" style=""><head>
+<meta charset="UTF-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Kerala Retreat - Adrayah Travels</title>
+<link as="image" href="assets/images/alleppey-backwaters.jpg" rel="preload"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600&amp;family=Noto+Serif:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary": "#3c1b00",
+                        "inverse-surface": "#303030",
+                        "on-error-container": "#93000a",
+                        "surface-container-high": "#eae7e7",
+                        "on-secondary": "#ffffff",
+                        "background": "#fcf9f8",
+                        "on-primary-fixed": "#001c38",
+                        "surface-muted": "#F4F8FB",
+                        "secondary": "#00658d",
+                        "inverse-on-surface": "#f3f0ef",
+                        "tertiary-fixed-dim": "#ffb780",
+                        "on-primary-fixed-variant": "#204874",
+                        "primary-container": "#0d3b66",
+                        "on-secondary-fixed": "#001e2d",
+                        "surface-container-low": "#f6f3f2",
+                        "outline-variant": "#c3c6d0",
+                        "on-secondary-fixed-variant": "#004c6b",
+                        "on-secondary-container": "#005576",
+                        "success-green": "#2D6A4F",
+                        "surface-variant": "#e5e2e1",
+                        "surface-container": "#f0eded",
+                        "primary": "#002546",
+                        "on-surface-variant": "#42474f",
+                        "surface-bright": "#fcf9f8",
+                        "tertiary-fixed": "#ffdcc4",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary-fixed-dim": "#82cfff",
+                        "on-tertiary-fixed": "#2f1400",
+                        "outline": "#737780",
+                        "primary-fixed": "#d3e4ff",
+                        "surface": "#fcf9f8",
+                        "glass-border": "rgba(255, 255, 255, 0.3)",
+                        "on-primary": "#ffffff",
+                        "surface-tint": "#3a608d",
+                        "secondary-container": "#73cafe",
+                        "on-tertiary-container": "#e09152",
+                        "on-primary-container": "#81a6d7",
+                        "on-background": "#1b1c1c",
+                        "on-error": "#ffffff",
+                        "on-tertiary-fixed-variant": "#6f3800",
+                        "tertiary-container": "#5c2d00",
+                        "on-tertiary": "#ffffff",
+                        "on-surface": "#1b1c1c",
+                        "surface-dim": "#dcd9d9",
+                        "error-container": "#ffdad6",
+                        "surface-container-highest": "#e5e2e1",
+                        "secondary-fixed": "#c6e7ff",
+                        "glass-surface": "rgba(255, 255, 255, 0.7)",
+                        "error": "#ba1a1a",
+                        "primary-fixed-dim": "#a4c9fc",
+                        "inverse-primary": "#a4c9fc"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "section-gap": "100px",
+                        "gutter-mobile": "16px",
+                        "margin-desktop": "80px",
+                        "margin-mobile": "20px",
+                        "gutter-desktop": "24px",
+                        "unit": "4px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Hanken Grotesk"],
+                        "headline-lg": ["Noto Serif"],
+                        "title-lg": ["Hanken Grotesk"],
+                        "body-lg": ["Hanken Grotesk"],
+                        "display-lg": ["Noto Serif"],
+                        "headline-md": ["Noto Serif"],
+                        "headline-lg-mobile": ["Noto Serif"],
+                        "label-md": ["Hanken Grotesk"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-lg": ["40px", { "lineHeight": "1.2", "fontWeight": "600" }],
+                        "title-lg": ["20px", { "lineHeight": "1.4", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "display-lg": ["56px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-md": ["28px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "headline-lg-mobile": ["32px", { "lineHeight": "1.2", "fontWeight": "600" }],
+                        "label-md": ["14px", { "lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 4px 40px rgba(0, 0, 0, 0.04);
+        }
+        .hero-gradient {
+            background: linear-gradient(to top, rgba(0, 37, 70, 0.8) 0%, rgba(0, 37, 70, 0.2) 50%, rgba(0, 37, 70, 0) 100%);
+        }
+        .card-gradient {
+            background: linear-gradient(to top, rgba(0, 37, 70, 0.9) 0%, rgba(0, 37, 70, 0.4) 50%, rgba(0, 37, 70, 0) 100%);
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .accordion-content {
+            transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+            max-height: 0;
+            opacity: 0;
+            overflow: hidden;
+        }
+        .accordion-content.active {
+            max-height: 1000px; /* Arbitrary large number */
+            opacity: 1;
+        }
+
+        @keyframes slide {
+            0%, 25% { opacity: 1; z-index: 10; }
+            33.33%, 91.66% { opacity: 0; z-index: 0; }
+            100% { opacity: 1; z-index: 10; }
+        }
+        
+        .slideshow-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0;
+            animation: slide 15s infinite;
+        }
+        
+        .slideshow-image:nth-child(1) { animation-delay: 0s; }
+        .slideshow-image:nth-child(2) { animation-delay: 5s; }
+        .slideshow-image:nth-child(3) { animation-delay: 10s; }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased selection:bg-tertiary-container selection:text-on-tertiary-fixed"><!-- TopNavBar -->
+<header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-margin-desktop h-20 bg-glass-surface backdrop-blur-md shadow-sm border-b border-glass-border hidden md:flex">
+<div class="flex items-center gap-4 cursor-pointer scale-95 active:opacity-80 transition-transform">
+<img alt="Adrayah Travels Logo" class="h-12 w-12 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMy1YSouma0Zi_lb3P35GbxDZLIXerJdyZu7fTYeDucNe3ULgdW5KXkeyHdJVbUyX3ou5UCPnFS1IA_o5Ovklt5uG-Yu2UNS5f_04Crh38ovVLj5FHHSFZPvQhyNp4LK0x9iFWu1wdn4NsEnkbbO6I3rvybolURSKa7BHva3kC-IiDaqPZelESqQphOn3ruDHrXFFDRWkP8U9RwbjjEa4-w-kwethfoaXGhZupxw70rIMWa_t5JZRwJ2xadj2SdfRjHuf_CXTKau8">
+<span class="font-headline-md text-headline-md font-bold text-primary">Adrayah Travels</span>
+</div>
+<nav class="flex items-center gap-6"><div class="group relative h-full flex items-center">
+<a class="nav-link text-on-surface-variant hover:text-primary transition-colors font-title-lg text-title-lg py-2" data-nav="Home" href="index.html">Home</a>
+</div>
+<!-- North India Mega Menu -->
+<div class="group relative h-full flex items-center">
+<a class="nav-link text-on-surface-variant hover:text-primary transition-colors font-title-lg text-title-lg flex items-center gap-1 py-2" data-nav="North India" href="north-india.html">North India <span class="material-symbols-outlined text-sm transition-transform group-hover:rotate-180">expand_more</span></a>
+<div class="absolute top-full left-1/2 -translate-x-1/2 w-[600px] bg-white/95 backdrop-blur-md rounded-2xl shadow-2xl border border-glass-border p-6 opacity-0 translate-y-4 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300 z-[100] grid grid-cols-2 gap-4"><a class="flex items-center p-3 rounded-xl hover:bg-surface-muted transition-colors" href="himachal-explorer.html"><div class="flex items-baseline gap-2"><p class="font-bold text-primary">Himachal Pradesh</p><span class="text-xs text-on-surface-variant">- Mountains &amp; Adventure</span></div></a><a class="flex items-center p-3 rounded-xl hover:bg-surface-muted transition-colors" href="kashmir-escape.html"><div class="flex items-baseline gap-2"><p class="font-bold text-primary">Kashmir</p><span class="text-xs text-on-surface-variant">- Paradise on Earth</span></div></a><a class="flex items-center p-3 rounded-xl hover:bg-surface-muted transition-colors" href="#"><div class="flex items-baseline gap-2"><p class="font-bold text-primary">Uttarakhand</p><span class="text-xs text-on-surface-variant">- Lakes, Temples &amp; Nature</span></div></a><a class="flex items-center p-3 rounded-xl hover:bg-surface-muted transition-colors" href="#"><div class="flex items-baseline gap-2"><p class="font-bold text-primary">Golden Triangle</p><span class="text-xs text-on-surface-variant">- Delhi, Agra &amp; Jaipur</span></div></a></div>
+</div>
+<!-- South India Mega Menu -->
+<div class="group relative h-full flex items-center">
+<a class="nav-link text-on-surface-variant hover:text-primary transition-colors font-title-lg text-title-lg flex items-center gap-1 py-2" data-nav="South India" href="south-india.html">South India <span class="material-symbols-outlined text-sm transition-transform group-hover:rotate-180">expand_more</span></a>
+<div class="absolute top-full left-1/2 -translate-x-1/2 w-[600px] bg-white/95 backdrop-blur-md rounded-2xl shadow-2xl border border-glass-border p-6 opacity-0 translate-y-4 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300 z-[100] grid grid-cols-2 gap-4"><a class="flex items-center p-3 rounded-xl hover:bg-surface-muted transition-colors" href="kerala-retreat.html"><div class="flex items-baseline gap-2"><p class="font-bold text-primary">Kerala</p><span class="text-xs text-on-surface-variant">- Backwaters &amp; Hills</span></div></a><a class="flex items-center p-3 rounded-xl hover:bg-surface-muted transition-colors" href="#"><div class="flex items-baseline gap-2"><p class="font-bold text-primary">Goa</p><span class="text-xs text-on-surface-variant">- Beaches &amp; Nightlife</span></div></a><a class="flex items-center p-3 rounded-xl hover:bg-surface-muted transition-colors" href="#"><div class="flex items-baseline gap-2"><p class="font-bold text-primary">Tamil Nadu</p><span class="text-xs text-on-surface-variant">- Heritage &amp; Temples</span></div></a><a class="flex items-center p-3 rounded-xl hover:bg-surface-muted transition-colors" href="#"><div class="flex items-baseline gap-2"><p class="font-bold text-primary">Karnataka</p><span class="text-xs text-on-surface-variant">- Culture &amp; Coffee Trails</span></div></a></div>
+</div>
+<!-- East India Mega Menu -->
+<div class="group relative h-full flex items-center">
+<a href="east-india.html" class="nav-link text-on-surface-variant hover:text-primary transition-colors font-title-lg text-title-lg flex items-center gap-1 py-2" data-nav="East India">East India <span class="material-symbols-outlined text-sm transition-transform group-hover:rotate-180">expand_more</span></a>
+<div class="absolute top-full left-1/2 -translate-x-1/2 w-[600px] bg-white/95 backdrop-blur-md rounded-2xl shadow-2xl border border-glass-border p-6 opacity-0 translate-y-4 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300 z-[100] grid grid-cols-2 gap-4"><a class="flex items-center p-3 rounded-xl hover:bg-surface-muted transition-colors" href="#"><div class="flex items-baseline gap-2"><p class="font-bold text-primary">Darjeeling</p><span class="text-xs text-on-surface-variant">- Tea Estates &amp; Toy Train</span></div></a><a class="flex items-center p-3 rounded-xl hover:bg-surface-muted transition-colors" href="#"><div class="flex items-baseline gap-2"><p class="font-bold text-primary">Gangtok</p><span class="text-xs text-on-surface-variant">- Monasteries &amp; Mountains</span></div></a><a class="flex items-center p-3 rounded-xl hover:bg-surface-muted transition-colors" href="meghalaya-discovery.html"><div class="flex items-baseline gap-2"><p class="font-bold text-primary">Meghalaya</p><span class="text-xs text-on-surface-variant">- Waterfalls &amp; Living Root Bridges</span></div></a><a class="flex items-center p-3 rounded-xl hover:bg-surface-muted transition-colors" href="#"><div class="flex items-baseline gap-2"><p class="font-bold text-primary">Odisha</p><span class="text-xs text-on-surface-variant">- Temples &amp; Coastal Heritage</span></div></a></div>
+</div>
+<!-- West India Mega Menu -->
+<div class="group relative h-full flex items-center">
+<a href="west-india.html" class="nav-link text-on-surface-variant hover:text-primary transition-colors font-title-lg text-title-lg flex items-center gap-1 py-2" data-nav="West India">West India <span class="material-symbols-outlined text-sm transition-transform group-hover:rotate-180">expand_more</span></a>
+<div class="absolute top-full right-0 w-[600px] bg-white/95 backdrop-blur-md rounded-2xl shadow-2xl border border-glass-border p-6 opacity-0 translate-y-4 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300 z-[100] grid grid-cols-2 gap-4"><a class="flex items-center p-3 rounded-xl hover:bg-surface-muted transition-colors" href="rajasthan-royal-circuit.html"><div class="flex items-baseline gap-2"><p class="font-bold text-primary">Rajasthan</p><span class="text-xs text-on-surface-variant">- Forts &amp; Royal Palaces</span></div></a><a class="flex items-center p-3 rounded-xl hover:bg-surface-muted transition-colors" href="#"><div class="flex items-baseline gap-2"><p class="font-bold text-primary">Gujarat</p><span class="text-xs text-on-surface-variant">- Wildlife &amp; Heritage</span></div></a><a class="flex items-center p-3 rounded-xl hover:bg-surface-muted transition-colors" href="#"><div class="flex items-baseline gap-2"><p class="font-bold text-primary">Maharashtra</p><span class="text-xs text-on-surface-variant">- Cities &amp; Hill Escapes</span></div></a></div>
+</div>
+<a class="nav-link text-on-surface-variant hover:text-primary transition-colors font-title-lg text-title-lg py-2" data-nav="Special Tours" href="special-tours.html">Special Tours</a>
+<a class="nav-link text-on-surface-variant hover:text-primary transition-colors font-title-lg text-title-lg py-2" data-nav="Contact" href="#">Contact</a></nav>
+<button class="bg-on-tertiary-container text-white px-6 py-2 rounded-full font-label-md text-label-md hover:opacity-90 transition-opacity shadow-lg shadow-on-tertiary-container/20" onclick="openEnquiryModal('General')">Enquire Now</button>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    let path = window.location.pathname.split('/').filter(Boolean).pop() || 'index';
+    path = path.replace('.html', '');
+    
+    const activeMap = {
+        'index': 'Home',
+        'north-india': 'North India',
+        'kashmir-escape': 'North India',
+        'himachal-explorer': 'North India',
+        'south-india': 'South India',
+        'kerala-retreat': 'South India',
+        'east-india': 'East India',
+        'meghalaya-discovery': 'East India',
+        'west-india': 'West India',
+        'rajasthan-royal-circuit': 'West India'
+    };
+    
+    const activeTarget = activeMap[path];
+    
+    document.querySelectorAll('.nav-link').forEach(link => {
+        // Reset all
+        link.classList.remove('text-on-secondary-container', 'border-b-2', 'border-on-tertiary-container', 'pb-1', 'font-bold', 'hover:text-on-tertiary-container');
+        link.classList.add('text-on-surface-variant', 'hover:text-primary', 'py-2');
+        
+        // Apply active
+        if (activeTarget && link.getAttribute('data-nav') === activeTarget) {
+            link.classList.remove('text-on-surface-variant', 'hover:text-primary', 'py-2');
+            link.classList.add('text-on-secondary-container', 'border-b-2', 'border-on-tertiary-container', 'pb-1', 'font-bold', 'hover:text-on-tertiary-container');
+        }
+    });
+});
+</script>
+</header>
+<!-- Mobile Top Header (Simplified) -->
+<header class="md:hidden fixed top-0 left-0 w-full z-50 flex justify-between items-center px-margin-mobile h-16 bg-glass-surface backdrop-blur-md shadow-sm border-b border-glass-border">
+<div class="flex items-center gap-2">
+<img alt="Adrayah Travels Logo" class="h-8 w-8 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMy1YSouma0Zi_lb3P35GbxDZLIXerJdyZu7fTYeDucNe3ULgdW5KXkeyHdJVbUyX3ou5UCPnFS1IA_o5Ovklt5uG-Yu2UNS5f_04Crh38ovVLj5FHHSFZPvQhyNp4LK0x9iFWu1wdn4NsEnkbbO6I3rvybolURSKa7BHva3kC-IiDaqPZelESqQphOn3ruDHrXFFDRWkP8U9RwbjjEa4-w-kwethfoaXGhZupxw70rIMWa_t5JZRwJ2xadj2SdfRjHuf_CXTKau8">
+<span class="font-headline-md text-headline-md font-bold text-primary text-xl">Adrayah</span>
+</div>
+<button class="text-primary p-2">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative h-screen min-h-[600px] flex items-end pb-24 pt-32 justify-center overflow-hidden bg-primary">
+<div class="absolute inset-0 z-0" style="pointer-events: none;">
+<img alt="Alleppey Backwaters" class="slideshow-image" src="assets/images/alleppey-backwaters.jpg"/>
+<img alt="Munnar Tea Gardens" class="slideshow-image" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBh3G_V3dPkEVnH_3aNfaPQHlMg100nlBzYj4luzBPABXs8CGMYnjfbYVYDGlX6b1KQ28ae3czLRLEmjmzNUqrCz2wM8DBoMFCgIhjtIYLOFRHVz4FKcTKVhpEViifC-cJYmXMNku-KSe7vajPlJ6qFToILUr9w32huYgHg-NvaW1G1foblNXlOWgQT13pCZl5iJSu36f8J3eqFZ2z8cfu59WOpgU-eDy9gyelw-RUfyc5Kol9e_iJB9k_NY6X5yS83DwgJyBltuBc"/>
+<img alt="Houseboats" class="slideshow-image" src="assets/images/alleppey-backwaters.jpg"/>
+</div>
+<div class="absolute inset-0 hero-gradient bg-black/20 z-10" style="pointer-events: none;"></div>
+<div class="relative z-20 w-full px-margin-mobile md:px-margin-desktop pb-20 text-center flex flex-col items-center" style="pointer-events: auto;">
+<span class="inline-block px-4 py-1.5 rounded-full bg-white/20 backdrop-blur-md text-white font-label-md text-label-md mb-4 border border-white/30 uppercase tracking-widest">South India</span>
+<h1 class="font-display-lg text-display-lg text-white mb-2 shadow-sm">Kerala Retreat</h1>
+<p class="font-headline-md text-headline-md text-secondary-fixed-dim mb-4 italic">God's Own Country</p>
+<div class="flex items-center gap-2 text-white font-body-lg text-body-lg mb-8 bg-black/20 px-6 py-2 rounded-full backdrop-blur-sm border border-white/10">
+<span class="material-symbols-outlined" style='font-variation-settings: "FILL" 1;'>schedule</span>
+<span class="">6 Days / 5 Nights</span>
+</div>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+<a class="w-full sm:w-auto inline-flex items-center justify-center bg-on-tertiary-container text-white px-8 py-4 rounded-full font-label-md text-label-md hover:shadow-lg hover:shadow-on-tertiary-container/30 transition-all transform hover:-translate-y-1 uppercase tracking-wider" href="#">
+<span class="material-symbols-outlined mr-2 text-xl">chat</span>
+                    Chat on WhatsApp
+                </a>
+<a class="w-full sm:w-auto inline-flex items-center justify-center border border-white text-white px-6 py-4 rounded-full font-label-md text-label-md hover:bg-white/10 transition-all flex items-center gap-2 glass-panel uppercase tracking-wider" href="#enquiry">
+<span class="material-symbols-outlined mr-2 text-xl">mail</span>
+                    Get Personalized Quote
+                </a>
+</div>
+</div>
+</section>
+<!-- Content Wrapper -->
+<div class="relative z-30 bg-background -mt-4 rounded-t-xl pt-section-gap pb-32">
+<!-- Journey Overview -->
+<section class="px-margin-mobile md:px-margin-desktop py-section-gap max-w-4xl mx-auto text-center">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-6">A Journey Through Emerald Landscapes</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                Step into a realm where time slows down to the rhythmic swaying of coconut palms. Our curated Kerala Retreat is an invitation to immerse yourself in the unparalleled beauty of 'God's Own Country'. Drift along the tranquil backwaters of Alleppey in a luxurious private houseboat, breathe in the crisp, cardamom-scented air of Munnar's rolling tea plantations, and rejuvenate your senses with authentic Ayurvedic wellness therapies. From the dense, wildlife-rich forests of Thekkady to the golden sands of Kovalam, this journey is meticulously designed to offer a perfect blend of exotic discovery and sophisticated relaxation.
+            </p>
+</section>
+<!-- Signature Experiences (Bento Grid) -->
+<section class="px-margin-mobile md:px-margin-desktop py-12 bg-surface-muted">
+<div class="max-w-7xl mx-auto">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-12 text-center">Signature Experiences</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter-desktop">
+<!-- Card 1 (Large) -->
+<div class="md:col-span-2 relative h-[400px] rounded-[24px] overflow-hidden group cursor-pointer shadow-sm hover:shadow-lg transition-all duration-500">
+<img alt="Luxurious houseboat on Kerala backwaters" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A high-end, intricately woven wooden houseboat gliding on the still backwaters of Kerala at sunset. The sky is a gradient of deep orange and purple, reflecting on the water. The scene implies a private, luxurious, and serene travel experience amidst nature." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAO-4xKPD4AzD-Pcl-sePApEDMQ3lQXA9v9w3-BN61v57qUDhyMmfU5CQGuvUDXOHwOblj1Ei0AC1kMjTlz6nV5yLe_Y3cxm6q7PdWOO1m-hlqzm3VfOWpmVVm1sYDmvkqX-1HeiXsWZyW1RIuBWioPdBWGZ4oliIZiX9AHV6CTjuFc4l6JgXtYs0088_2C4VbdeKzWkFUBjSjTfovQwc-0BLJbX_3Fp22DPN4TFG_bXLH__89kKbUzXCvqIVV2-KvpdFGydfxCmcA"/>
+<div class="absolute inset-0 card-gradient"></div>
+<div class="absolute bottom-0 left-0 p-8 w-full">
+<span class="inline-block px-3 py-1 rounded-full bg-white/20 backdrop-blur-md text-white font-label-md text-label-md mb-3 text-xs uppercase tracking-wider">Alleppey</span>
+<h3 class="font-headline-md text-headline-md text-white mb-2">Private Houseboat Cruise</h3>
+<p class="font-body-md text-body-md text-white/90 line-clamp-2">Drift through emerald canals on a luxurious traditional Kettuvallam, enjoying freshly prepared local delicacies as the sun sets over the water.</p>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="relative h-[400px] rounded-[24px] overflow-hidden group cursor-pointer shadow-sm hover:shadow-lg transition-all duration-500">
+<img alt="Rolling hills of tea plantations in Munnar" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Expansive, rolling hills blanketed in vibrant green tea plantations in Munnar, Kerala. A soft morning mist hangs over the valleys, creating a mystical and refreshing atmosphere. The neatly trimmed tea bushes form captivating geometric patterns across the landscape." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDak8KgOo9DNuvN5ivtVzzT38mjQ_65xj1YW-4PhVNXs3Ih0sy3kYY8k_wOFZVr9XKDYVOmLEgSuMy24wFxrxSrjOLQEnPstkwIwEXdCvCbkZM2c4583vAMjPfE4lPWFEBPO8SGVFAI-cerBEi0T_MyRm8TwJeqFgN-T3fDVBSlOBaZj_dW4ovH2yBZedeJj-abacLKf1T-V7rAjGZYX6sH8yduLiyQuHFFipURG5zGfZ4mzZycc-FomYo1TZaHV39UUB6Teuen5DQ"/>
+<div class="absolute inset-0 card-gradient"></div>
+<div class="absolute bottom-0 left-0 p-6 w-full">
+<span class="inline-block px-3 py-1 rounded-full bg-white/20 backdrop-blur-md text-white font-label-md text-label-md mb-3 text-xs uppercase tracking-wider">Munnar</span>
+<h3 class="font-title-lg text-title-lg text-white mb-2">Tea Estate Trails</h3>
+<p class="font-body-md text-body-md text-white/90 line-clamp-2">Wander through seemingly endless emerald tea gardens and learn the art of tea tasting in the cool mountain air.</p>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="relative h-[400px] rounded-[24px] overflow-hidden group cursor-pointer shadow-sm hover:shadow-lg transition-all duration-500">
+<img alt="Lush spice plantation in Thekkady" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A close-up view of a vibrant, dense spice plantation in Thekkady, Kerala. Sunlight filters through the broad leaves of cardamom, pepper vines, and cinnamon trees, creating a dappled light effect. The environment is rich, aromatic, and deeply green." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBg6uwLMInA6uiGRqH3jcZ5UOk0WyPtCLvf7-igH83gr3LHVwHb1r4tYJq4dUkb1DigmIyqbzvGKyi0Jp5kqP0j0gR30IM-1Dhn6S4YyBDDgc4wy_zlav0fRM9e4jZSTQMgebIGk_gokdeZUb8BdDKD4NSjgy_oHijar8blaKdQ7hQxA-KVVNoNBAsXsDvL59JtvcxXIzthBQJSx9v3sbLW3zir7Nss99BPJ_lnvT-6V7s8TBDltPbHchnI0UsWs1DG0RfFqU3bGTM"/>
+<div class="absolute inset-0 card-gradient"></div>
+<div class="absolute bottom-0 left-0 p-6 w-full">
+<span class="inline-block px-3 py-1 rounded-full bg-white/20 backdrop-blur-md text-white font-label-md text-label-md mb-3 text-xs uppercase tracking-wider">Thekkady</span>
+<h3 class="font-title-lg text-title-lg text-white mb-2">Aromatic Spice Tour</h3>
+<p class="font-body-md text-body-md text-white/90 line-clamp-2">Engage your senses on a guided walk through aromatic plantations of cardamom, pepper, and cinnamon.</p>
+</div>
+</div>
+<!-- Card 4 (Large) -->
+<div class="md:col-span-2 relative h-[400px] rounded-[24px] overflow-hidden group cursor-pointer shadow-sm hover:shadow-lg transition-all duration-500">
+<img alt="Elephants in Periyar National Park" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A tranquil scene at Periyar National Park showing a herd of wild elephants bathing and drinking at the edge of a serene lake surrounded by dense, misty forest. The atmosphere is wild, untouched, and majestic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBp3VFs5DzrDpCr8z7ks4jBHkoNenIiqhkfN46ddOH1v6ypSFfAmUbHDn3wVsPlRbnM-HM7F745SuFFCoZfsd9UILyi2HVfJX8_F5w-5xKYJ7bL35XsXxeFQqVKJmURYw_Qx3ofck6wspvsrifBkAljbCM2UWRSty6lGN8IO55KVieEhv0dfUOh_qoN2ah_IqspkmJiiwmDIjBZW81JxxFo_ea_zNtevE70nwP6EMKG4r6f1vbJshM8KLQAUly1y5bIxRi6GnYKOCU"/>
+<div class="absolute inset-0 card-gradient"></div>
+<div class="absolute bottom-0 left-0 p-8 w-full">
+<span class="inline-block px-3 py-1 rounded-full bg-white/20 backdrop-blur-md text-white font-label-md text-label-md mb-3 text-xs uppercase tracking-wider">Periyar</span>
+<h3 class="font-headline-md text-headline-md text-white mb-2">Wildlife Encounters</h3>
+<p class="font-body-md text-body-md text-white/90 line-clamp-2">Embark on a gentle boat safari across Lake Periyar, keeping watch for wild elephants, bison, and diverse birdlife in their natural habitat.</p>
+</div>
+</div>
+<!-- Card 5 -->
+<div class="relative h-[400px] rounded-[24px] overflow-hidden group cursor-pointer shadow-sm hover:shadow-lg transition-all duration-500">
+<img alt="Ayurvedic spa setting with oils and herbs" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A serene and luxurious Ayurvedic spa setting. Warm, soft lighting illuminates brass bowls filled with herbal oils, fresh flowers, and smooth massage stones arranged on a pristine wooden surface. The mood is deeply relaxing, restorative, and authentic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIMsT0oK6bDtFV7b_r4bnSBWbmWKscYpy9Bl74O30nXSVffvayA179ibnU7oOILYhtscpGEc_V2y2GW_e0EOGEEvp--Pv7Drp4-nVmQr_WDQ6BwTxdNaWHjJxWpd_zadKcUhUzghZxBlBQHerPZKHZZQUrODxon0P4EGoqvkDrd_0BKBh9yl-v3RrNMtIHZWR2zWDf7uF5vX_mJQMMlj4SAiNpizR_Vq_xE27M8-CJVHRTYOS6xIvnGfFFh9-2gdabJ0o1DU6xdcE"/>
+<div class="absolute inset-0 card-gradient"></div>
+<div class="absolute bottom-0 left-0 p-6 w-full">
+<span class="inline-block px-3 py-1 rounded-full bg-white/20 backdrop-blur-md text-white font-label-md text-label-md mb-3 text-xs uppercase tracking-wider">Wellness</span>
+<h3 class="font-title-lg text-title-lg text-white mb-2">Ayurvedic Rejuvenation</h3>
+<p class="font-body-md text-body-md text-white/90 line-clamp-2">Restore balance to your body and mind with authentic, expert-led Ayurvedic therapies in a tranquil setting.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Detailed Itinerary -->
+<section class="px-margin-mobile md:px-margin-desktop py-section-gap max-w-5xl mx-auto">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-10 text-center">Your Curated Journey</h2>
+<div class="space-y-4">
+<!-- Day 1 -->
+<div class="glass-panel rounded-2xl overflow-hidden">
+<button class="w-full px-6 py-5 flex justify-between items-center text-left focus:outline-none" onclick="this.nextElementSibling.classList.toggle('active'); this.querySelector('.icon').textContent = this.querySelector('.icon').textContent === 'expand_more' ? 'expand_less' : 'expand_more';">
+<div class="flex items-center gap-4">
+<div class="bg-primary/10 text-primary w-12 h-12 rounded-full flex items-center justify-center font-title-lg text-title-lg">1</div>
+<h3 class="font-title-lg text-title-lg text-primary">Arrival in Kochi: The Queen of the Arabian Sea</h3>
+</div>
+<span class="material-symbols-outlined icon text-on-surface-variant transition-transform">expand_more</span>
+</button>
+<div class="accordion-content px-6 pb-6 pt-2 border-t border-glass-border ml-16">
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">
+                            Upon arrival at Cochin International Airport, you will be warmly welcomed by our representative and transferred to your luxury heritage hotel in Fort Kochi. Spend the afternoon exploring the cobbled streets, marveling at the iconic Chinese Fishing Nets, and visiting the historic Mattancherry Palace. In the evening, enjoy a traditional Kathakali dance performance.
+                        </p>
+<div class="flex items-center gap-2 text-sm text-secondary font-label-md">
+<span class="material-symbols-outlined text-base">hotel</span> Premium Heritage Stay
+                        </div>
+</div>
+</div>
+<!-- Day 2-3 -->
+<div class="glass-panel rounded-2xl overflow-hidden">
+<button class="w-full px-6 py-5 flex justify-between items-center text-left focus:outline-none" onclick="this.nextElementSibling.classList.toggle('active'); this.querySelector('.icon').textContent = this.querySelector('.icon').textContent === 'expand_more' ? 'expand_less' : 'expand_more';">
+<div class="flex items-center gap-4">
+<div class="bg-primary/10 text-primary w-12 h-12 rounded-full flex items-center justify-center font-title-lg text-title-lg">2-3</div>
+<h3 class="font-title-lg text-title-lg text-primary">Munnar: Above the Clouds</h3>
+</div>
+<span class="material-symbols-outlined icon text-on-surface-variant transition-transform">expand_more</span>
+</button>
+<div class="accordion-content px-6 pb-6 pt-2 border-t border-glass-border ml-16">
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">
+                            A scenic drive takes you winding up into the Western Ghats to Munnar. Over the next two days, lose yourself in the endless expanse of tea estates. Visit the Tea Museum, take a guided walk through the plantations, and drive up to Top Station for panoramic views. Enjoy a private high-tea experience overlooking the misty valleys.
+                        </p>
+<div class="flex items-center gap-2 text-sm text-secondary font-label-md">
+<span class="material-symbols-outlined text-base">landscape</span> High Altitude Resort
+                        </div>
+</div>
+</div>
+<!-- Day 4 -->
+<div class="glass-panel rounded-2xl overflow-hidden">
+<button class="w-full px-6 py-5 flex justify-between items-center text-left focus:outline-none" onclick="this.nextElementSibling.classList.toggle('active'); this.querySelector('.icon').textContent = this.querySelector('.icon').textContent === 'expand_more' ? 'expand_less' : 'expand_more';">
+<div class="flex items-center gap-4">
+<div class="bg-primary/10 text-primary w-12 h-12 rounded-full flex items-center justify-center font-title-lg text-title-lg">4</div>
+<h3 class="font-title-lg text-title-lg text-primary">Thekkady: Into the Wild</h3>
+</div>
+<span class="material-symbols-outlined icon text-on-surface-variant transition-transform">expand_more</span>
+</button>
+<div class="accordion-content px-6 pb-6 pt-2 border-t border-glass-border ml-16">
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">
+                            Descend slightly to the spice-scented town of Thekkady. Take an insightful tour through a private spice plantation. Later, experience the serene beauty of Periyar National Park with a boat ride on the lake, offering chances to spot wildlife at the water's edge. Evening at leisure to explore local spice markets.
+                        </p>
+<div class="flex items-center gap-2 text-sm text-secondary font-label-md">
+<span class="material-symbols-outlined text-base">eco</span> Boutique Jungle Lodge
+                        </div>
+</div>
+</div>
+<!-- Day 5 -->
+<div class="glass-panel rounded-2xl overflow-hidden">
+<button class="w-full px-6 py-5 flex justify-between items-center text-left focus:outline-none" onclick="this.nextElementSibling.classList.toggle('active'); this.querySelector('.icon').textContent = this.querySelector('.icon').textContent === 'expand_more' ? 'expand_less' : 'expand_more';">
+<div class="flex items-center gap-4">
+<div class="bg-primary/10 text-primary w-12 h-12 rounded-full flex items-center justify-center font-title-lg text-title-lg">5</div>
+<h3 class="font-title-lg text-title-lg text-primary">Alleppey: Backwater Serenity</h3>
+</div>
+<span class="material-symbols-outlined icon text-on-surface-variant transition-transform">expand_more</span>
+</button>
+<div class="accordion-content px-6 pb-6 pt-2 border-t border-glass-border ml-16">
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">
+                            Drive to Alleppey and board your private, luxury Kettuvallam (houseboat) by midday. Cruise through the labyrinth of palm-fringed canals, observing village life along the banks. Your personal chef will prepare exquisite Kerala cuisine on board. Fall asleep to the gentle lapping of water under a starlit sky.
+                        </p>
+<div class="flex items-center gap-2 text-sm text-secondary font-label-md">
+<span class="material-symbols-outlined text-base">directions_boat</span> Premium Private Houseboat
+                        </div>
+</div>
+</div>
+<!-- Day 6 -->
+<div class="glass-panel rounded-2xl overflow-hidden">
+<button class="w-full px-6 py-5 flex justify-between items-center text-left focus:outline-none" onclick="this.nextElementSibling.classList.toggle('active'); this.querySelector('.icon').textContent = this.querySelector('.icon').textContent === 'expand_more' ? 'expand_less' : 'expand_more';">
+<div class="flex items-center gap-4">
+<div class="bg-primary/10 text-primary w-12 h-12 rounded-full flex items-center justify-center font-title-lg text-title-lg">6</div>
+<h3 class="font-title-lg text-title-lg text-primary">Departure</h3>
+</div>
+<span class="material-symbols-outlined icon text-on-surface-variant transition-transform">expand_more</span>
+</button>
+<div class="accordion-content px-6 pb-6 pt-2 border-t border-glass-border ml-16">
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">
+                            Enjoy a final breakfast on the houseboat before disembarking. You will be driven back to Kochi airport for your onward journey, carrying memories of an unforgettable Kerala retreat.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Enquiry Form Widget (Desktop Floating / Mobile Bottom) -->
+
+</main>
+<footer class="w-full pt-16 pb-16 bg-[#0A2540] text-white">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-8">
+    <!-- Brand Column -->
+    <div class="flex flex-col gap-4">
+        <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full border border-white/30 flex items-center justify-center flex-shrink-0">
+                <span class="material-symbols-outlined text-[20px] text-white/80">explore</span>
+            </div>
+            <div class="font-serif leading-tight">
+                <div class="font-headline-md text-[28px] font-bold tracking-wide">Adrayah</div>
+                <div class="font-headline-md text-[28px] font-bold tracking-wide">Travels</div>
+            </div>
+        </div>
+        <p class="font-body-sm text-sm mt-1 text-white/90">à¤…à¤¦à¥à¤µà¤¯: - à¤šà¤²à¥‹ à¤šà¤²à¥‡à¤‚....</p>
+        <p class="font-body-sm text-[15px] opacity-80 leading-relaxed mt-2 text-white/90">
+            Crafting unforgettable journeys across Incredible India through personalized itineraries, curated experiences, and exceptional hospitality.
+        </p>
+        <div class="flex items-center gap-2 mt-4 text-[15px] opacity-90 text-white/90">
+            <span class="material-symbols-outlined text-[20px]">location_on</span>
+            <span>Delhi, India</span>
+        </div>
+    </div>
+
+    <!-- Contact Us Column -->
+    <div class="flex flex-col gap-6">
+        <h4 class="font-title-lg text-lg font-bold tracking-wide">Contact Us</h4>
+        <div class="flex flex-col gap-4">
+            <div class="flex items-center gap-3 text-white/80 hover:text-white transition-colors cursor-pointer">
+                <span class="material-symbols-outlined text-[20px]">chat</span>
+                <span class="font-body-md text-[15px]">+91 9654182903</span>
+            </div>
+            <div class="flex items-center gap-3 text-white/80 hover:text-white transition-colors cursor-pointer">
+                <span class="material-symbols-outlined text-[20px]">chat</span>
+                <span class="font-body-md text-[15px]">+91 7982037419</span>
+            </div>
+            <div class="flex items-center gap-3 text-white/80 hover:text-white transition-colors cursor-pointer">
+                <span class="material-symbols-outlined text-[20px]">mail</span>
+                <span class="font-body-md text-[15px]">info@adrayahtravels.com</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quick Links Column -->
+    <div class="flex flex-col gap-6">
+        <h4 class="font-title-lg text-lg font-bold tracking-wide">Quick Links</h4>
+        <div class="flex flex-col gap-3">
+            <a href="north-india.html" class="font-body-md text-[15px] text-white/80 hover:text-white transition-colors">North India</a>
+            <a href="south-india.html" class="font-body-md text-[15px] text-white/80 hover:text-white transition-colors">South India</a>
+            <a href="east-india.html" class="font-body-md text-[15px] text-white/80 hover:text-white transition-colors">East India</a>
+            <a href="west-india.html" class="font-body-md text-[15px] text-white/80 hover:text-white transition-colors">West India</a>
+            <a href="special-tours.html" class="font-body-md text-[15px] text-white/80 hover:text-white transition-colors">Special Tours</a>
+            <a href="contact.html" class="font-body-md text-[15px] text-white/80 hover:text-white transition-colors">Contact Us</a>
+        </div>
+    </div>
+
+    <!-- Follow Us Column -->
+    <div class="flex flex-col gap-6">
+        <h4 class="font-title-lg text-lg font-bold tracking-wide">Follow Us</h4>
+        <div class="flex gap-4">
+            <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors">
+                <span class="material-symbols-outlined text-[20px] text-white/90">public</span>
+            </a>
+            <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors">
+                <span class="material-symbols-outlined text-[20px] text-white/90">share</span>
+            </a>
+            <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors">
+                <span class="material-symbols-outlined text-[20px] text-white/90">photo_library</span>
+            </a>
+        </div>
+        <div class="flex flex-col gap-2 mt-2">
+            <p class="font-body-md text-[15px] text-white/80">Instagram: @adrayahtravel</p>
+            <p class="font-body-md text-[15px] text-white/80">Facebook: @adrayahtravel</p>
+        </div>
+    </div>
+</div>
+</footer>
+
+<!-- BottomNavBar (Mobile Only) -->
+<div class="md:hidden fixed bottom-6 right-6 z-50 flex gap-4">
+<button class="flex items-center gap-2 text-primary dark:text-primary-fixed-dim px-6 py-3 bg-glass-surface dark:bg-primary/90 backdrop-blur-lg border border-glass-border shadow-lg rounded-full font-label-md text-label-md hover:scale-105 transition-transform duration-300">
+<span class="material-symbols-outlined">chat</span>
+<span class="hidden sm:inline">WhatsApp</span>
+</button>
+<button class="flex items-center gap-2 text-primary dark:text-primary-fixed-dim px-6 py-3 bg-glass-surface dark:bg-primary/90 backdrop-blur-lg border border-glass-border shadow-lg rounded-full font-label-md text-label-md hover:scale-105 transition-transform duration-300">
+<span class="material-symbols-outlined">call</span>
+<span class="hidden sm:inline">Call Support</span>
+</button>
+</div>
+    <script src="assets/js/enquiry-system.js"></script>
+</body></html>
+
+
+
+
+
+
+
