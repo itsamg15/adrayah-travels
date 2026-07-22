@@ -157,39 +157,37 @@
         .slideshow-image:nth-child(2) { animation-delay: 5s; }
         .slideshow-image:nth-child(3) { animation-delay: 10s; }
     </style>
+    <link rel="preload" as="image" href="assets/images/alleppey-backwaters.jpg">
 </head>
 <body class="bg-background text-on-background font-body-md antialiased selection:bg-tertiary-container selection:text-on-tertiary-fixed"><!-- TopNavBar -->
-<header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-margin-desktop h-20 bg-glass-surface backdrop-blur-md shadow-sm border-b border-glass-border hidden md:flex">
-<div class="flex items-center gap-4 cursor-pointer scale-95 active:opacity-80 transition-transform">
-<img alt="Adrayah Travels Logo" class="h-12 w-12 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMy1YSouma0Zi_lb3P35GbxDZLIXerJdyZu7fTYeDucNe3ULgdW5KXkeyHdJVbUyX3ou5UCPnFS1IA_o5Ovklt5uG-Yu2UNS5f_04Crh38ovVLj5FHHSFZPvQhyNp4LK0x9iFWu1wdn4NsEnkbbO6I3rvybolURSKa7BHva3kC-IiDaqPZelESqQphOn3ruDHrXFFDRWkP8U9RwbjjEa4-w-kwethfoaXGhZupxw70rIMWa_t5JZRwJ2xadj2SdfRjHuf_CXTKau8">
-<span class="font-headline-md text-headline-md font-bold text-primary">Adrayah Travels</span>
-</div>
-<nav class="flex items-center gap-6"><div class="group relative h-full flex items-center">
-<a class="nav-link text-on-surface-variant hover:text-primary transition-colors font-title-lg text-title-lg py-2" data-nav="Home" href="index.html">Home</a>
-</div>
+<header class="fixed top-0 left-0 w-full z-50 flex flex-nowrap justify-between items-center px-2 md:px-4 lg:px-6 xl:px-8 2xl:px-margin-desktop h-16 md:h-20 bg-glass-surface backdrop-blur-md shadow-sm border-b border-glass-border hidden md:flex">
+<a href="index.html" class="flex items-center gap-1 md:gap-2 2xl:gap-4 cursor-pointer scale-95 active:opacity-80 transition-transform shrink-0"><img alt="Adrayah Travels Logo" class="h-8 w-8 md:h-10 md:w-10 2xl:h-12 2xl:w-12 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMy1YSouma0Zi_lb3P35GbxDZLIXerJdyZu7fTYeDucNe3ULgdW5KXkeyHdJVbUyX3ou5UCPnFS1IA_o5Ovklt5uG-Yu2UNS5f_04Crh38ovVLj5FHHSFZPvQhyNp4LK0x9iFWu1wdn4NsEnkbbO6I3rvybolURSKa7BHva3kC-IiDaqPZelESqQphOn3ruDHrXFFDRWkP8U9RwbjjEa4-w-kwethfoaXGhZupxw70rIMWa_t5JZRwJ2xadj2SdfRjHuf_CXTKau8">
+<span class="font-headline-md text-base md:text-xl xl:text-2xl 2xl:text-headline-md font-bold text-primary whitespace-nowrap">Adrayah Travels</span></a>
+<nav class="flex flex-nowrap items-center gap-1 md:gap-2 xl:gap-4 2xl:gap-6 shrink-0">
+<a class="nav-link text-on-surface-variant hover:text-primary transition-colors font-title-lg text-xs md:text-sm xl:text-base 2xl:text-title-lg py-1 md:py-2 whitespace-nowrap" data-nav="Home" href="index.html">Home</a>
 <!-- North India Mega Menu -->
 <div class="group relative h-full flex items-center">
-<a class="nav-link text-on-surface-variant hover:text-primary transition-colors font-title-lg text-title-lg flex items-center gap-1 py-2" data-nav="North India" href="north-india.html">North India <span class="material-symbols-outlined text-sm transition-transform group-hover:rotate-180">expand_more</span></a>
-<div class="absolute top-full left-1/2 -translate-x-1/2 w-[600px] bg-white/95 backdrop-blur-md rounded-2xl shadow-2xl border border-glass-border p-6 opacity-0 translate-y-4 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300 z-[100] grid grid-cols-2 gap-4"><a class="flex items-center p-3 rounded-xl hover:bg-surface-muted transition-colors" href="himachal-explorer.html"><div class="flex items-baseline gap-2"><p class="font-bold text-primary">Himachal Pradesh</p><span class="text-xs text-on-surface-variant">- Mountains &amp; Adventure</span></div></a><a class="flex items-center p-3 rounded-xl hover:bg-surface-muted transition-colors" href="kashmir-escape.html"><div class="flex items-baseline gap-2"><p class="font-bold text-primary">Kashmir</p><span class="text-xs text-on-surface-variant">- Paradise on Earth</span></div></a><a class="flex items-center p-3 rounded-xl hover:bg-surface-muted transition-colors" href="#"><div class="flex items-baseline gap-2"><p class="font-bold text-primary">Uttarakhand</p><span class="text-xs text-on-surface-variant">- Lakes, Temples &amp; Nature</span></div></a><a class="flex items-center p-3 rounded-xl hover:bg-surface-muted transition-colors" href="#"><div class="flex items-baseline gap-2"><p class="font-bold text-primary">Golden Triangle</p><span class="text-xs text-on-surface-variant">- Delhi, Agra &amp; Jaipur</span></div></a></div>
+<a class="nav-link text-on-surface-variant hover:text-primary transition-colors font-title-lg text-xs md:text-sm xl:text-base 2xl:text-title-lg flex items-center gap-0.5 md:gap-1 py-1 md:py-2 whitespace-nowrap" data-nav="North India" href="north-india.html">North India <span class="material-symbols-outlined text-[10px] md:text-sm transition-transform group-hover:rotate-180">expand_more</span></a>
+<div class="absolute top-full left-1/2 -translate-x-1/2 w-[600px] bg-white/95 backdrop-blur-md rounded-2xl shadow-2xl border border-glass-border p-6 opacity-0 translate-y-4 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300 z-[100] grid grid-cols-2 gap-4"><a class="flex items-center p-3 rounded-xl hover:bg-surface-muted transition-colors" href="himachal-explorer.html"><div class="flex items-baseline gap-2"><p class="font-bold text-primary whitespace-nowrap">Himachal Pradesh</p><span class="text-xs text-on-surface-variant whitespace-nowrap">- Mountains &amp; Adventure</span></div></a><a class="flex items-center p-3 rounded-xl hover:bg-surface-muted transition-colors" href="kashmir-escape.html"><div class="flex items-baseline gap-2"><p class="font-bold text-primary whitespace-nowrap">Kashmir</p><span class="text-xs text-on-surface-variant whitespace-nowrap">- Paradise on Earth</span></div></a><a class="flex items-center p-3 rounded-xl hover:bg-surface-muted transition-colors" href="north-india.html"><div class="flex items-baseline gap-2"><p class="font-bold text-primary whitespace-nowrap">Uttarakhand</p><span class="text-xs text-on-surface-variant whitespace-nowrap">- Lakes, Temples &amp; Nature</span></div></a><a class="flex items-center p-3 rounded-xl hover:bg-surface-muted transition-colors" href="north-india.html"><div class="flex items-baseline gap-2"><p class="font-bold text-primary whitespace-nowrap">Golden Triangle</p><span class="text-xs text-on-surface-variant whitespace-nowrap">- Delhi, Agra &amp; Jaipur</span></div></a></div>
 </div>
 <!-- South India Mega Menu -->
 <div class="group relative h-full flex items-center">
-<a class="nav-link text-on-surface-variant hover:text-primary transition-colors font-title-lg text-title-lg flex items-center gap-1 py-2" data-nav="South India" href="south-india.html">South India <span class="material-symbols-outlined text-sm transition-transform group-hover:rotate-180">expand_more</span></a>
-<div class="absolute top-full left-1/2 -translate-x-1/2 w-[600px] bg-white/95 backdrop-blur-md rounded-2xl shadow-2xl border border-glass-border p-6 opacity-0 translate-y-4 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300 z-[100] grid grid-cols-2 gap-4"><a class="flex items-center p-3 rounded-xl hover:bg-surface-muted transition-colors" href="kerala-retreat.html"><div class="flex items-baseline gap-2"><p class="font-bold text-primary">Kerala</p><span class="text-xs text-on-surface-variant">- Backwaters &amp; Hills</span></div></a><a class="flex items-center p-3 rounded-xl hover:bg-surface-muted transition-colors" href="#"><div class="flex items-baseline gap-2"><p class="font-bold text-primary">Goa</p><span class="text-xs text-on-surface-variant">- Beaches &amp; Nightlife</span></div></a><a class="flex items-center p-3 rounded-xl hover:bg-surface-muted transition-colors" href="#"><div class="flex items-baseline gap-2"><p class="font-bold text-primary">Tamil Nadu</p><span class="text-xs text-on-surface-variant">- Heritage &amp; Temples</span></div></a><a class="flex items-center p-3 rounded-xl hover:bg-surface-muted transition-colors" href="#"><div class="flex items-baseline gap-2"><p class="font-bold text-primary">Karnataka</p><span class="text-xs text-on-surface-variant">- Culture &amp; Coffee Trails</span></div></a></div>
+<a class="nav-link text-on-surface-variant hover:text-primary transition-colors font-title-lg text-xs md:text-sm xl:text-base 2xl:text-title-lg flex items-center gap-0.5 md:gap-1 py-1 md:py-2 whitespace-nowrap" data-nav="South India" href="south-india.html">South India <span class="material-symbols-outlined text-[10px] md:text-sm transition-transform group-hover:rotate-180">expand_more</span></a>
+<div class="absolute top-full left-1/2 -translate-x-1/2 w-[600px] bg-white/95 backdrop-blur-md rounded-2xl shadow-2xl border border-glass-border p-6 opacity-0 translate-y-4 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300 z-[100] grid grid-cols-2 gap-4"><a class="flex items-center p-3 rounded-xl hover:bg-surface-muted transition-colors" href="kerala-retreat.html"><div class="flex items-baseline gap-2"><p class="font-bold text-primary whitespace-nowrap">Kerala</p><span class="text-xs text-on-surface-variant whitespace-nowrap">- Backwaters &amp; Hills</span></div></a><a class="flex items-center p-3 rounded-xl hover:bg-surface-muted transition-colors" href="south-india.html"><div class="flex items-baseline gap-2"><p class="font-bold text-primary whitespace-nowrap">Goa</p><span class="text-xs text-on-surface-variant whitespace-nowrap">- Beaches &amp; Nightlife</span></div></a><a class="flex items-center p-3 rounded-xl hover:bg-surface-muted transition-colors" href="south-india.html"><div class="flex items-baseline gap-2"><p class="font-bold text-primary whitespace-nowrap">Tamil Nadu</p><span class="text-xs text-on-surface-variant whitespace-nowrap">- Heritage &amp; Temples</span></div></a><a class="flex items-center p-3 rounded-xl hover:bg-surface-muted transition-colors" href="south-india.html"><div class="flex items-baseline gap-2"><p class="font-bold text-primary whitespace-nowrap">Karnataka</p><span class="text-xs text-on-surface-variant whitespace-nowrap">- Culture &amp; Coffee Trails</span></div></a></div>
 </div>
 <!-- East India Mega Menu -->
 <div class="group relative h-full flex items-center">
-<a href="east-india.html" class="nav-link text-on-surface-variant hover:text-primary transition-colors font-title-lg text-title-lg flex items-center gap-1 py-2" data-nav="East India">East India <span class="material-symbols-outlined text-sm transition-transform group-hover:rotate-180">expand_more</span></a>
-<div class="absolute top-full left-1/2 -translate-x-1/2 w-[600px] bg-white/95 backdrop-blur-md rounded-2xl shadow-2xl border border-glass-border p-6 opacity-0 translate-y-4 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300 z-[100] grid grid-cols-2 gap-4"><a class="flex items-center p-3 rounded-xl hover:bg-surface-muted transition-colors" href="#"><div class="flex items-baseline gap-2"><p class="font-bold text-primary">Darjeeling</p><span class="text-xs text-on-surface-variant">- Tea Estates &amp; Toy Train</span></div></a><a class="flex items-center p-3 rounded-xl hover:bg-surface-muted transition-colors" href="#"><div class="flex items-baseline gap-2"><p class="font-bold text-primary">Gangtok</p><span class="text-xs text-on-surface-variant">- Monasteries &amp; Mountains</span></div></a><a class="flex items-center p-3 rounded-xl hover:bg-surface-muted transition-colors" href="meghalaya-discovery.html"><div class="flex items-baseline gap-2"><p class="font-bold text-primary">Meghalaya</p><span class="text-xs text-on-surface-variant">- Waterfalls &amp; Living Root Bridges</span></div></a><a class="flex items-center p-3 rounded-xl hover:bg-surface-muted transition-colors" href="#"><div class="flex items-baseline gap-2"><p class="font-bold text-primary">Odisha</p><span class="text-xs text-on-surface-variant">- Temples &amp; Coastal Heritage</span></div></a></div>
+<a href="east-india.html" class="nav-link text-on-surface-variant hover:text-primary transition-colors font-title-lg text-xs md:text-sm xl:text-base 2xl:text-title-lg flex items-center gap-0.5 md:gap-1 py-1 md:py-2 whitespace-nowrap" data-nav="East India">East India <span class="material-symbols-outlined text-[10px] md:text-sm transition-transform group-hover:rotate-180">expand_more</span></a>
+<div class="absolute top-full left-1/2 -translate-x-1/2 w-[600px] bg-white/95 backdrop-blur-md rounded-2xl shadow-2xl border border-glass-border p-6 opacity-0 translate-y-4 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300 z-[100] grid grid-cols-2 gap-4"><a class="flex items-center p-3 rounded-xl hover:bg-surface-muted transition-colors" href="east-india.html"><div class="flex items-baseline gap-2"><p class="font-bold text-primary whitespace-nowrap">Darjeeling</p><span class="text-xs text-on-surface-variant whitespace-nowrap">- Tea Estates &amp; Toy Train</span></div></a><a class="flex items-center p-3 rounded-xl hover:bg-surface-muted transition-colors" href="east-india.html"><div class="flex items-baseline gap-2"><p class="font-bold text-primary whitespace-nowrap">Gangtok</p><span class="text-xs text-on-surface-variant whitespace-nowrap">- Monasteries &amp; Mountains</span></div></a><a class="flex items-center p-3 rounded-xl hover:bg-surface-muted transition-colors" href="meghalaya-discovery.html"><div class="flex items-baseline gap-2"><p class="font-bold text-primary whitespace-nowrap">Meghalaya</p><span class="text-xs text-on-surface-variant whitespace-nowrap">- Waterfalls &amp; Living Root Bridges</span></div></a><a class="flex items-center p-3 rounded-xl hover:bg-surface-muted transition-colors" href="east-india.html"><div class="flex items-baseline gap-2"><p class="font-bold text-primary whitespace-nowrap">Odisha</p><span class="text-xs text-on-surface-variant whitespace-nowrap">- Temples &amp; Coastal Heritage</span></div></a></div>
 </div>
 <!-- West India Mega Menu -->
 <div class="group relative h-full flex items-center">
-<a href="west-india.html" class="nav-link text-on-surface-variant hover:text-primary transition-colors font-title-lg text-title-lg flex items-center gap-1 py-2" data-nav="West India">West India <span class="material-symbols-outlined text-sm transition-transform group-hover:rotate-180">expand_more</span></a>
-<div class="absolute top-full right-0 w-[600px] bg-white/95 backdrop-blur-md rounded-2xl shadow-2xl border border-glass-border p-6 opacity-0 translate-y-4 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300 z-[100] grid grid-cols-2 gap-4"><a class="flex items-center p-3 rounded-xl hover:bg-surface-muted transition-colors" href="rajasthan-royal-circuit.html"><div class="flex items-baseline gap-2"><p class="font-bold text-primary">Rajasthan</p><span class="text-xs text-on-surface-variant">- Forts &amp; Royal Palaces</span></div></a><a class="flex items-center p-3 rounded-xl hover:bg-surface-muted transition-colors" href="#"><div class="flex items-baseline gap-2"><p class="font-bold text-primary">Gujarat</p><span class="text-xs text-on-surface-variant">- Wildlife &amp; Heritage</span></div></a><a class="flex items-center p-3 rounded-xl hover:bg-surface-muted transition-colors" href="#"><div class="flex items-baseline gap-2"><p class="font-bold text-primary">Maharashtra</p><span class="text-xs text-on-surface-variant">- Cities &amp; Hill Escapes</span></div></a></div>
+<a href="west-india.html" class="nav-link text-on-surface-variant hover:text-primary transition-colors font-title-lg text-xs md:text-sm xl:text-base 2xl:text-title-lg flex items-center gap-0.5 md:gap-1 py-1 md:py-2 whitespace-nowrap" data-nav="West India">West India <span class="material-symbols-outlined text-[10px] md:text-sm transition-transform group-hover:rotate-180">expand_more</span></a>
+<div class="absolute top-full right-0 w-[600px] bg-white/95 backdrop-blur-md rounded-2xl shadow-2xl border border-glass-border p-6 opacity-0 translate-y-4 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300 z-[100] grid grid-cols-2 gap-4"><a class="flex items-center p-3 rounded-xl hover:bg-surface-muted transition-colors" href="rajasthan-royal-circuit.html"><div class="flex items-baseline gap-2"><p class="font-bold text-primary whitespace-nowrap">Rajasthan</p><span class="text-xs text-on-surface-variant whitespace-nowrap">- Forts &amp; Royal Palaces</span></div></a><a class="flex items-center p-3 rounded-xl hover:bg-surface-muted transition-colors" href="west-india.html"><div class="flex items-baseline gap-2"><p class="font-bold text-primary whitespace-nowrap">Gujarat</p><span class="text-xs text-on-surface-variant whitespace-nowrap">- Wildlife &amp; Heritage</span></div></a><a class="flex items-center p-3 rounded-xl hover:bg-surface-muted transition-colors" href="west-india.html"><div class="flex items-baseline gap-2"><p class="font-bold text-primary whitespace-nowrap">Maharashtra</p><span class="text-xs text-on-surface-variant whitespace-nowrap">- Cities &amp; Hill Escapes</span></div></a></div>
 </div>
-<a class="nav-link text-on-surface-variant hover:text-primary transition-colors font-title-lg text-title-lg py-2" data-nav="Special Tours" href="special-tours.html">Special Tours</a>
-<a class="nav-link text-on-surface-variant hover:text-primary transition-colors font-title-lg text-title-lg py-2" data-nav="Contact" href="#">Contact</a></nav>
-<button class="bg-on-tertiary-container text-white px-6 py-2 rounded-full font-label-md text-label-md hover:opacity-90 transition-opacity shadow-lg shadow-on-tertiary-container/20" onclick="openEnquiryModal('General')">Enquire Now</button>
+<a class="nav-link text-on-surface-variant hover:text-primary transition-colors font-title-lg text-xs md:text-sm xl:text-base 2xl:text-title-lg py-1 md:py-2 whitespace-nowrap" data-nav="Special Tours" href="special-tours.html">Special Tours</a>
+<a class="nav-link text-on-surface-variant hover:text-primary transition-colors font-title-lg text-xs md:text-sm xl:text-base 2xl:text-title-lg py-1 md:py-2 whitespace-nowrap" data-nav="Contact" href="index.html#contact">Contact</a></nav>
+<button class="bg-on-tertiary-container text-white px-2 md:px-3 xl:px-4 2xl:px-6 py-1 md:py-2 rounded-full font-label-md text-[9px] md:text-[10px] xl:text-xs 2xl:text-label-md hover:opacity-90 transition-opacity shadow-lg shadow-on-tertiary-container/20 whitespace-nowrap shrink-0" onclick="openEnquiryModal('General')">Enquire Now</button>
 <script>
 document.addEventListener('DOMContentLoaded', () => {
     let path = window.location.pathname.split('/').filter(Boolean).pop() || 'index';
@@ -205,7 +203,8 @@ document.addEventListener('DOMContentLoaded', () => {
         'east-india': 'East India',
         'meghalaya-discovery': 'East India',
         'west-india': 'West India',
-        'rajasthan-royal-circuit': 'West India'
+        'rajasthan-royal-circuit': 'West India',
+        'special-tours': 'Special Tours'
     };
     
     const activeTarget = activeMap[path];
@@ -224,23 +223,115 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 </script>
 </header>
-<!-- Mobile Top Header (Simplified) -->
+
+<!-- Mobile Top Header -->
 <header class="md:hidden fixed top-0 left-0 w-full z-50 flex justify-between items-center px-margin-mobile h-16 bg-glass-surface backdrop-blur-md shadow-sm border-b border-glass-border">
-<div class="flex items-center gap-2">
-<img alt="Adrayah Travels Logo" class="h-8 w-8 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMy1YSouma0Zi_lb3P35GbxDZLIXerJdyZu7fTYeDucNe3ULgdW5KXkeyHdJVbUyX3ou5UCPnFS1IA_o5Ovklt5uG-Yu2UNS5f_04Crh38ovVLj5FHHSFZPvQhyNp4LK0x9iFWu1wdn4NsEnkbbO6I3rvybolURSKa7BHva3kC-IiDaqPZelESqQphOn3ruDHrXFFDRWkP8U9RwbjjEa4-w-kwethfoaXGhZupxw70rIMWa_t5JZRwJ2xadj2SdfRjHuf_CXTKau8">
-<span class="font-headline-md text-headline-md font-bold text-primary text-xl">Adrayah</span>
-</div>
-<button class="text-primary p-2">
-<span class="material-symbols-outlined">menu</span>
-</button>
+    <a href="index.html" class="flex items-center gap-2"><img alt="Adrayah Travels Logo" class="h-8 w-8 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMy1YSouma0Zi_lb3P35GbxDZLIXerJdyZu7fTYeDucNe3ULgdW5KXkeyHdJVbUyX3ou5UCPnFS1IA_o5Ovklt5uG-Yu2UNS5f_04Crh38ovVLj5FHHSFZPvQhyNp4LK0x9iFWu1wdn4NsEnkbbO6I3rvybolURSKa7BHva3kC-IiDaqPZelESqQphOn3ruDHrXFFDRWkP8U9RwbjjEa4-w-kwethfoaXGhZupxw70rIMWa_t5JZRwJ2xadj2SdfRjHuf_CXTKau8">
+        <span class="font-headline-md text-headline-md font-bold text-primary text-lg sm:text-xl truncate whitespace-nowrap tracking-tight">Adrayah Travels</span></a>
+    <button id="mobile-menu-button" type="button" class="text-primary p-2" aria-label="Open mobile menu" aria-controls="mobile-menu" aria-expanded="false">
+        <span class="material-symbols-outlined">menu</span>
+    </button>
 </header>
-<main>
+
+<div id="mobile-menu-backdrop" class="mobile-menu-backdrop fixed inset-0 z-[60] bg-black/50 hidden opacity-0"></div>
+
+<aside id="mobile-menu" class="mobile-menu-panel fixed top-0 left-0 z-[70] h-full w-[86vw] max-w-sm -translate-x-full bg-white shadow-2xl overflow-y-auto md:hidden">
+    <div class="sticky top-0 z-[71] flex items-center justify-between px-5 py-4 border-b border-surface-variant bg-white/95 backdrop-blur-md">
+        <a href="index.html" class="flex items-center gap-3"><img alt="Adrayah Travels Logo" class="h-9 w-9 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMy1YSouma0Zi_lb3P35GbxDZLIXerJdyZu7fTYeDucNe3ULgdW5KXkeyHdJVbUyX3ou5UCPnFS1IA_o5Ovklt5uG-Yu2UNS5f_04Crh38ovVLj5FHHSFZPvQhyNp4LK0x9iFWu1wdn4NsEnkbbO6I3rvybolURSKa7BHva3kC-IiDaqPZelESqQphOn3ruDHrXFFDRWkP8U9RwbjjEa4-w-kwethfoaXGhZupxw70rIMWa_t5JZRwJ2xadj2SdfRjHuf_CXTKau8">
+            <div>
+                <p class="font-title-lg text-title-lg text-primary font-bold leading-tight">Adrayah Travels</p>
+                <p class="text-xs text-on-surface-variant">Explore Incredible India</p></div></a>
+        <button id="mobile-menu-close" type="button" class="text-primary p-2 rounded-full hover:bg-surface-muted" aria-label="Close mobile menu">
+            <span class="material-symbols-outlined">close</span>
+        </button>
+    </div>
+
+    <nav class="p-5 pb-8 flex flex-col gap-3">
+        <a href="index.html" class="flex items-center justify-between rounded-2xl px-4 py-4 bg-surface-muted text-primary font-semibold">
+            <span>Home</span>
+            <span class="material-symbols-outlined text-sm">chevron_right</span>
+        </a>
+
+        <details class="group rounded-2xl border border-surface-variant bg-white shadow-sm">
+            <summary class="mobile-summary list-none cursor-pointer flex items-center justify-between px-4 py-4 text-primary font-semibold">
+                <span>North India</span>
+                <span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+            </summary>
+            <div class="px-4 pb-4 space-y-2">
+                <a href="north-india.html" class="block rounded-xl px-3 py-3 bg-surface-muted text-on-surface-variant hover:bg-primary/5 hover:text-primary transition-colors">North India Overview</a>
+                <a href="kashmir-escape.html" class="block rounded-xl px-3 py-3 bg-surface-muted text-on-surface-variant hover:bg-primary/5 hover:text-primary transition-colors">Kashmir Escape</a>
+                <a href="himachal-explorer.html" class="block rounded-xl px-3 py-3 bg-surface-muted text-on-surface-variant hover:bg-primary/5 hover:text-primary transition-colors">Himachal Explorer</a>
+                <span class="block rounded-xl px-3 py-3 bg-surface-muted text-on-surface-variant/50">Uttarakhand</span>
+                <span class="block rounded-xl px-3 py-3 bg-surface-muted text-on-surface-variant/50">Golden Triangle</span>
+            </div>
+        </details>
+
+        <details class="group rounded-2xl border border-surface-variant bg-white shadow-sm">
+            <summary class="mobile-summary list-none cursor-pointer flex items-center justify-between px-4 py-4 text-primary font-semibold">
+                <span>South India</span>
+                <span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+            </summary>
+            <div class="px-4 pb-4 space-y-2">
+                <a href="south-india.html" class="block rounded-xl px-3 py-3 bg-surface-muted text-on-surface-variant hover:bg-primary/5 hover:text-primary transition-colors">South India Overview</a>
+                <a href="kerala-retreat.html" class="block rounded-xl px-3 py-3 bg-surface-muted text-on-surface-variant hover:bg-primary/5 hover:text-primary transition-colors">Kerala Retreat</a>
+                <span class="block rounded-xl px-3 py-3 bg-surface-muted text-on-surface-variant/50">Goa</span>
+                <span class="block rounded-xl px-3 py-3 bg-surface-muted text-on-surface-variant/50">Tamil Nadu</span>
+                <span class="block rounded-xl px-3 py-3 bg-surface-muted text-on-surface-variant/50">Karnataka</span>
+            </div>
+        </details>
+
+        <details class="group rounded-2xl border border-surface-variant bg-white shadow-sm">
+            <summary class="mobile-summary list-none cursor-pointer flex items-center justify-between px-4 py-4 text-primary font-semibold">
+                <span>East India</span>
+                <span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+            </summary>
+            <div class="px-4 pb-4 space-y-2">
+                <a href="east-india.html" class="block rounded-xl px-3 py-3 bg-surface-muted text-on-surface-variant hover:bg-primary/5 hover:text-primary transition-colors">East India Overview</a>
+                <a href="meghalaya-discovery.html" class="block rounded-xl px-3 py-3 bg-surface-muted text-on-surface-variant hover:bg-primary/5 hover:text-primary transition-colors">Meghalaya Discovery</a>
+                <span class="block rounded-xl px-3 py-3 bg-surface-muted text-on-surface-variant/50">Darjeeling</span>
+                <span class="block rounded-xl px-3 py-3 bg-surface-muted text-on-surface-variant/50">Gangtok</span>
+                <span class="block rounded-xl px-3 py-3 bg-surface-muted text-on-surface-variant/50">Odisha</span>
+            </div>
+        </details>
+
+        <details class="group rounded-2xl border border-surface-variant bg-white shadow-sm">
+            <summary class="mobile-summary list-none cursor-pointer flex items-center justify-between px-4 py-4 text-primary font-semibold">
+                <span>West India</span>
+                <span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+            </summary>
+            <div class="px-4 pb-4 space-y-2">
+                <a href="west-india.html" class="block rounded-xl px-3 py-3 bg-surface-muted text-on-surface-variant hover:bg-primary/5 hover:text-primary transition-colors">West India Overview</a>
+                <a href="rajasthan-royal-circuit.html" class="block rounded-xl px-3 py-3 bg-surface-muted text-on-surface-variant hover:bg-primary/5 hover:text-primary transition-colors">Rajasthan Royal Circuit</a>
+                <span class="block rounded-xl px-3 py-3 bg-surface-muted text-on-surface-variant/50">Gujarat</span>
+                <span class="block rounded-xl px-3 py-3 bg-surface-muted text-on-surface-variant/50">Maharashtra</span>
+            </div>
+        </details>
+
+        <a href="special-tours.html" class="flex items-center justify-between rounded-2xl px-4 py-4 bg-surface-muted text-primary font-semibold">
+            <span>Special Tours</span>
+            <span class="material-symbols-outlined text-sm">chevron_right</span>
+        </a>
+
+        <button type="button" class="w-full rounded-2xl px-4 py-4 bg-on-tertiary-container text-white font-semibold shadow-lg" onclick="openEnquiryModal('General')">
+            Enquire Now
+        </button>
+
+        <button type="button" class="w-full rounded-2xl px-4 py-4 border border-primary text-primary font-semibold" onclick="openCallbackModal()">
+            Request Callback
+        </button>
+
+        <a href="#" onclick="event.preventDefault(); openEnquiryModal('General');" target="_blank" class="w-full rounded-2xl px-4 py-4 bg-success-green text-white font-semibold flex items-center justify-center gap-2">
+            <span class="material-symbols-outlined">chat</span>
+            WhatsApp
+        </a>
+    </nav>
+</aside>
 <!-- Hero Section -->
 <section class="relative h-screen min-h-[600px] flex items-end pb-24 pt-32 justify-center overflow-hidden bg-primary">
 <div class="absolute inset-0 z-0" style="pointer-events: none;">
-<img alt="Alleppey Backwaters" class="slideshow-image" src="assets/images/alleppey-backwaters.jpg"/>
-<img alt="Munnar Tea Gardens" class="slideshow-image" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBh3G_V3dPkEVnH_3aNfaPQHlMg100nlBzYj4luzBPABXs8CGMYnjfbYVYDGlX6b1KQ28ae3czLRLEmjmzNUqrCz2wM8DBoMFCgIhjtIYLOFRHVz4FKcTKVhpEViifC-cJYmXMNku-KSe7vajPlJ6qFToILUr9w32huYgHg-NvaW1G1foblNXlOWgQT13pCZl5iJSu36f8J3eqFZ2z8cfu59WOpgU-eDy9gyelw-RUfyc5Kol9e_iJB9k_NY6X5yS83DwgJyBltuBc"/>
-<img alt="Houseboats" class="slideshow-image" src="assets/images/alleppey-backwaters.jpg"/>
+<img fetchpriority="high" alt="Alleppey Backwaters" class="slideshow-image" src="assets/images/alleppey-backwaters.jpg"/>
+<img loading="lazy" alt="Munnar Tea Gardens" class="slideshow-image" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBh3G_V3dPkEVnH_3aNfaPQHlMg100nlBzYj4luzBPABXs8CGMYnjfbYVYDGlX6b1KQ28ae3czLRLEmjmzNUqrCz2wM8DBoMFCgIhjtIYLOFRHVz4FKcTKVhpEViifC-cJYmXMNku-KSe7vajPlJ6qFToILUr9w32huYgHg-NvaW1G1foblNXlOWgQT13pCZl5iJSu36f8J3eqFZ2z8cfu59WOpgU-eDy9gyelw-RUfyc5Kol9e_iJB9k_NY6X5yS83DwgJyBltuBc"/>
+<img fetchpriority="high" alt="Houseboats" class="slideshow-image" src="assets/images/alleppey-backwaters.jpg"/>
 </div>
 <div class="absolute inset-0 hero-gradient bg-black/20 z-10" style="pointer-events: none;"></div>
 <div class="relative z-20 w-full px-margin-mobile md:px-margin-desktop pb-20 text-center flex flex-col items-center" style="pointer-events: auto;">
@@ -252,9 +343,9 @@ document.addEventListener('DOMContentLoaded', () => {
 <span class="">6 Days / 5 Nights</span>
 </div>
 <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-<a class="w-full sm:w-auto inline-flex items-center justify-center bg-on-tertiary-container text-white px-8 py-4 rounded-full font-label-md text-label-md hover:shadow-lg hover:shadow-on-tertiary-container/30 transition-all transform hover:-translate-y-1 uppercase tracking-wider" href="#">
+<a class="w-full sm:w-auto inline-flex items-center justify-center bg-on-tertiary-container text-white px-8 py-4 rounded-full font-label-md text-label-md hover:shadow-lg hover:shadow-on-tertiary-container/30 transition-all transform hover:-translate-y-1 uppercase tracking-wider" href="#" onclick="event.preventDefault(); openEnquiryModal('General');">
 <span class="material-symbols-outlined mr-2 text-xl">chat</span>
-                    Chat on WhatsApp
+                    Enquire via Form
                 </a>
 <a class="w-full sm:w-auto inline-flex items-center justify-center border border-white text-white px-6 py-4 rounded-full font-label-md text-label-md hover:bg-white/10 transition-all flex items-center gap-2 glass-panel uppercase tracking-wider" href="#enquiry">
 <span class="material-symbols-outlined mr-2 text-xl">mail</span>
@@ -279,7 +370,7 @@ document.addEventListener('DOMContentLoaded', () => {
 <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter-desktop">
 <!-- Card 1 (Large) -->
 <div class="md:col-span-2 relative h-[400px] rounded-[24px] overflow-hidden group cursor-pointer shadow-sm hover:shadow-lg transition-all duration-500">
-<img alt="Luxurious houseboat on Kerala backwaters" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A high-end, intricately woven wooden houseboat gliding on the still backwaters of Kerala at sunset. The sky is a gradient of deep orange and purple, reflecting on the water. The scene implies a private, luxurious, and serene travel experience amidst nature." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAO-4xKPD4AzD-Pcl-sePApEDMQ3lQXA9v9w3-BN61v57qUDhyMmfU5CQGuvUDXOHwOblj1Ei0AC1kMjTlz6nV5yLe_Y3cxm6q7PdWOO1m-hlqzm3VfOWpmVVm1sYDmvkqX-1HeiXsWZyW1RIuBWioPdBWGZ4oliIZiX9AHV6CTjuFc4l6JgXtYs0088_2C4VbdeKzWkFUBjSjTfovQwc-0BLJbX_3Fp22DPN4TFG_bXLH__89kKbUzXCvqIVV2-KvpdFGydfxCmcA"/>
+<img loading="lazy" alt="Luxurious houseboat on Kerala backwaters" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A high-end, intricately woven wooden houseboat gliding on the still backwaters of Kerala at sunset. The sky is a gradient of deep orange and purple, reflecting on the water. The scene implies a private, luxurious, and serene travel experience amidst nature." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAO-4xKPD4AzD-Pcl-sePApEDMQ3lQXA9v9w3-BN61v57qUDhyMmfU5CQGuvUDXOHwOblj1Ei0AC1kMjTlz6nV5yLe_Y3cxm6q7PdWOO1m-hlqzm3VfOWpmVVm1sYDmvkqX-1HeiXsWZyW1RIuBWioPdBWGZ4oliIZiX9AHV6CTjuFc4l6JgXtYs0088_2C4VbdeKzWkFUBjSjTfovQwc-0BLJbX_3Fp22DPN4TFG_bXLH__89kKbUzXCvqIVV2-KvpdFGydfxCmcA"/>
 <div class="absolute inset-0 card-gradient"></div>
 <div class="absolute bottom-0 left-0 p-8 w-full">
 <span class="inline-block px-3 py-1 rounded-full bg-white/20 backdrop-blur-md text-white font-label-md text-label-md mb-3 text-xs uppercase tracking-wider">Alleppey</span>
@@ -289,7 +380,7 @@ document.addEventListener('DOMContentLoaded', () => {
 </div>
 <!-- Card 2 -->
 <div class="relative h-[400px] rounded-[24px] overflow-hidden group cursor-pointer shadow-sm hover:shadow-lg transition-all duration-500">
-<img alt="Rolling hills of tea plantations in Munnar" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Expansive, rolling hills blanketed in vibrant green tea plantations in Munnar, Kerala. A soft morning mist hangs over the valleys, creating a mystical and refreshing atmosphere. The neatly trimmed tea bushes form captivating geometric patterns across the landscape." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDak8KgOo9DNuvN5ivtVzzT38mjQ_65xj1YW-4PhVNXs3Ih0sy3kYY8k_wOFZVr9XKDYVOmLEgSuMy24wFxrxSrjOLQEnPstkwIwEXdCvCbkZM2c4583vAMjPfE4lPWFEBPO8SGVFAI-cerBEi0T_MyRm8TwJeqFgN-T3fDVBSlOBaZj_dW4ovH2yBZedeJj-abacLKf1T-V7rAjGZYX6sH8yduLiyQuHFFipURG5zGfZ4mzZycc-FomYo1TZaHV39UUB6Teuen5DQ"/>
+<img loading="lazy" alt="Rolling hills of tea plantations in Munnar" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Expansive, rolling hills blanketed in vibrant green tea plantations in Munnar, Kerala. A soft morning mist hangs over the valleys, creating a mystical and refreshing atmosphere. The neatly trimmed tea bushes form captivating geometric patterns across the landscape." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDak8KgOo9DNuvN5ivtVzzT38mjQ_65xj1YW-4PhVNXs3Ih0sy3kYY8k_wOFZVr9XKDYVOmLEgSuMy24wFxrxSrjOLQEnPstkwIwEXdCvCbkZM2c4583vAMjPfE4lPWFEBPO8SGVFAI-cerBEi0T_MyRm8TwJeqFgN-T3fDVBSlOBaZj_dW4ovH2yBZedeJj-abacLKf1T-V7rAjGZYX6sH8yduLiyQuHFFipURG5zGfZ4mzZycc-FomYo1TZaHV39UUB6Teuen5DQ"/>
 <div class="absolute inset-0 card-gradient"></div>
 <div class="absolute bottom-0 left-0 p-6 w-full">
 <span class="inline-block px-3 py-1 rounded-full bg-white/20 backdrop-blur-md text-white font-label-md text-label-md mb-3 text-xs uppercase tracking-wider">Munnar</span>
@@ -299,7 +390,7 @@ document.addEventListener('DOMContentLoaded', () => {
 </div>
 <!-- Card 3 -->
 <div class="relative h-[400px] rounded-[24px] overflow-hidden group cursor-pointer shadow-sm hover:shadow-lg transition-all duration-500">
-<img alt="Lush spice plantation in Thekkady" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A close-up view of a vibrant, dense spice plantation in Thekkady, Kerala. Sunlight filters through the broad leaves of cardamom, pepper vines, and cinnamon trees, creating a dappled light effect. The environment is rich, aromatic, and deeply green." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBg6uwLMInA6uiGRqH3jcZ5UOk0WyPtCLvf7-igH83gr3LHVwHb1r4tYJq4dUkb1DigmIyqbzvGKyi0Jp5kqP0j0gR30IM-1Dhn6S4YyBDDgc4wy_zlav0fRM9e4jZSTQMgebIGk_gokdeZUb8BdDKD4NSjgy_oHijar8blaKdQ7hQxA-KVVNoNBAsXsDvL59JtvcxXIzthBQJSx9v3sbLW3zir7Nss99BPJ_lnvT-6V7s8TBDltPbHchnI0UsWs1DG0RfFqU3bGTM"/>
+<img loading="lazy" alt="Lush spice plantation in Thekkady" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A close-up view of a vibrant, dense spice plantation in Thekkady, Kerala. Sunlight filters through the broad leaves of cardamom, pepper vines, and cinnamon trees, creating a dappled light effect. The environment is rich, aromatic, and deeply green." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBg6uwLMInA6uiGRqH3jcZ5UOk0WyPtCLvf7-igH83gr3LHVwHb1r4tYJq4dUkb1DigmIyqbzvGKyi0Jp5kqP0j0gR30IM-1Dhn6S4YyBDDgc4wy_zlav0fRM9e4jZSTQMgebIGk_gokdeZUb8BdDKD4NSjgy_oHijar8blaKdQ7hQxA-KVVNoNBAsXsDvL59JtvcxXIzthBQJSx9v3sbLW3zir7Nss99BPJ_lnvT-6V7s8TBDltPbHchnI0UsWs1DG0RfFqU3bGTM"/>
 <div class="absolute inset-0 card-gradient"></div>
 <div class="absolute bottom-0 left-0 p-6 w-full">
 <span class="inline-block px-3 py-1 rounded-full bg-white/20 backdrop-blur-md text-white font-label-md text-label-md mb-3 text-xs uppercase tracking-wider">Thekkady</span>
@@ -309,7 +400,7 @@ document.addEventListener('DOMContentLoaded', () => {
 </div>
 <!-- Card 4 (Large) -->
 <div class="md:col-span-2 relative h-[400px] rounded-[24px] overflow-hidden group cursor-pointer shadow-sm hover:shadow-lg transition-all duration-500">
-<img alt="Elephants in Periyar National Park" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A tranquil scene at Periyar National Park showing a herd of wild elephants bathing and drinking at the edge of a serene lake surrounded by dense, misty forest. The atmosphere is wild, untouched, and majestic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBp3VFs5DzrDpCr8z7ks4jBHkoNenIiqhkfN46ddOH1v6ypSFfAmUbHDn3wVsPlRbnM-HM7F745SuFFCoZfsd9UILyi2HVfJX8_F5w-5xKYJ7bL35XsXxeFQqVKJmURYw_Qx3ofck6wspvsrifBkAljbCM2UWRSty6lGN8IO55KVieEhv0dfUOh_qoN2ah_IqspkmJiiwmDIjBZW81JxxFo_ea_zNtevE70nwP6EMKG4r6f1vbJshM8KLQAUly1y5bIxRi6GnYKOCU"/>
+<img loading="lazy" alt="Elephants in Periyar National Park" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A tranquil scene at Periyar National Park showing a herd of wild elephants bathing and drinking at the edge of a serene lake surrounded by dense, misty forest. The atmosphere is wild, untouched, and majestic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBp3VFs5DzrDpCr8z7ks4jBHkoNenIiqhkfN46ddOH1v6ypSFfAmUbHDn3wVsPlRbnM-HM7F745SuFFCoZfsd9UILyi2HVfJX8_F5w-5xKYJ7bL35XsXxeFQqVKJmURYw_Qx3ofck6wspvsrifBkAljbCM2UWRSty6lGN8IO55KVieEhv0dfUOh_qoN2ah_IqspkmJiiwmDIjBZW81JxxFo_ea_zNtevE70nwP6EMKG4r6f1vbJshM8KLQAUly1y5bIxRi6GnYKOCU"/>
 <div class="absolute inset-0 card-gradient"></div>
 <div class="absolute bottom-0 left-0 p-8 w-full">
 <span class="inline-block px-3 py-1 rounded-full bg-white/20 backdrop-blur-md text-white font-label-md text-label-md mb-3 text-xs uppercase tracking-wider">Periyar</span>
@@ -319,7 +410,7 @@ document.addEventListener('DOMContentLoaded', () => {
 </div>
 <!-- Card 5 -->
 <div class="relative h-[400px] rounded-[24px] overflow-hidden group cursor-pointer shadow-sm hover:shadow-lg transition-all duration-500">
-<img alt="Ayurvedic spa setting with oils and herbs" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A serene and luxurious Ayurvedic spa setting. Warm, soft lighting illuminates brass bowls filled with herbal oils, fresh flowers, and smooth massage stones arranged on a pristine wooden surface. The mood is deeply relaxing, restorative, and authentic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIMsT0oK6bDtFV7b_r4bnSBWbmWKscYpy9Bl74O30nXSVffvayA179ibnU7oOILYhtscpGEc_V2y2GW_e0EOGEEvp--Pv7Drp4-nVmQr_WDQ6BwTxdNaWHjJxWpd_zadKcUhUzghZxBlBQHerPZKHZZQUrODxon0P4EGoqvkDrd_0BKBh9yl-v3RrNMtIHZWR2zWDf7uF5vX_mJQMMlj4SAiNpizR_Vq_xE27M8-CJVHRTYOS6xIvnGfFFh9-2gdabJ0o1DU6xdcE"/>
+<img loading="lazy" alt="Ayurvedic spa setting with oils and herbs" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A serene and luxurious Ayurvedic spa setting. Warm, soft lighting illuminates brass bowls filled with herbal oils, fresh flowers, and smooth massage stones arranged on a pristine wooden surface. The mood is deeply relaxing, restorative, and authentic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIMsT0oK6bDtFV7b_r4bnSBWbmWKscYpy9Bl74O30nXSVffvayA179ibnU7oOILYhtscpGEc_V2y2GW_e0EOGEEvp--Pv7Drp4-nVmQr_WDQ6BwTxdNaWHjJxWpd_zadKcUhUzghZxBlBQHerPZKHZZQUrODxon0P4EGoqvkDrd_0BKBh9yl-v3RrNMtIHZWR2zWDf7uF5vX_mJQMMlj4SAiNpizR_Vq_xE27M8-CJVHRTYOS6xIvnGfFFh9-2gdabJ0o1DU6xdcE"/>
 <div class="absolute inset-0 card-gradient"></div>
 <div class="absolute bottom-0 left-0 p-6 w-full">
 <span class="inline-block px-3 py-1 rounded-full bg-white/20 backdrop-blur-md text-white font-label-md text-label-md mb-3 text-xs uppercase tracking-wider">Wellness</span>
@@ -431,15 +522,13 @@ document.addEventListener('DOMContentLoaded', () => {
     <!-- Brand Column -->
     <div class="flex flex-col gap-4">
         <div class="flex items-center gap-3">
-            <div class="w-10 h-10 rounded-full border border-white/30 flex items-center justify-center flex-shrink-0">
-                <span class="material-symbols-outlined text-[20px] text-white/80">explore</span>
-            </div>
+            <img alt="Adrayah Travels Logo" class="h-12 w-12 object-contain bg-white rounded-full p-1" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMy1YSouma0Zi_lb3P35GbxDZLIXerJdyZu7fTYeDucNe3ULgdW5KXkeyHdJVbUyX3ou5UCPnFS1IA_o5Ovklt5uG-Yu2UNS5f_04Crh38ovVLj5FHHSFZPvQhyNp4LK0x9iFWu1wdn4NsEnkbbO6I3rvybolURSKa7BHva3kC-IiDaqPZelESqQphOn3ruDHrXFFDRWkP8U9RwbjjEa4-w-kwethfoaXGhZupxw70rIMWa_t5JZRwJ2xadj2SdfRjHuf_CXTKau8">
             <div class="font-serif leading-tight">
                 <div class="font-headline-md text-[28px] font-bold tracking-wide">Adrayah</div>
                 <div class="font-headline-md text-[28px] font-bold tracking-wide">Travels</div>
             </div>
         </div>
-        <p class="font-body-sm text-sm mt-1 text-white/90">à¤…à¤¦à¥à¤µà¤¯: - à¤šà¤²à¥‹ à¤šà¤²à¥‡à¤‚....</p>
+        <p class="font-body-sm text-sm mt-1 text-white/90">अद्वय: - चलो चलें....</p>
         <p class="font-body-sm text-[15px] opacity-80 leading-relaxed mt-2 text-white/90">
             Crafting unforgettable journeys across Incredible India through personalized itineraries, curated experiences, and exceptional hospitality.
         </p>
@@ -453,18 +542,26 @@ document.addEventListener('DOMContentLoaded', () => {
     <div class="flex flex-col gap-6">
         <h4 class="font-title-lg text-lg font-bold tracking-wide">Contact Us</h4>
         <div class="flex flex-col gap-4">
-            <div class="flex items-center gap-3 text-white/80 hover:text-white transition-colors cursor-pointer">
-                <span class="material-symbols-outlined text-[20px]">chat</span>
-                <span class="font-body-md text-[15px]">+91 9654182903</span>
-            </div>
-            <div class="flex items-center gap-3 text-white/80 hover:text-white transition-colors cursor-pointer">
-                <span class="material-symbols-outlined text-[20px]">chat</span>
-                <span class="font-body-md text-[15px]">+91 7982037419</span>
-            </div>
+            
+            
             <div class="flex items-center gap-3 text-white/80 hover:text-white transition-colors cursor-pointer">
                 <span class="material-symbols-outlined text-[20px]">mail</span>
                 <span class="font-body-md text-[15px]">info@adrayahtravels.com</span>
             </div>
+
+            <div class="flex items-start gap-3 text-white/80 mt-2">
+                <span class="material-symbols-outlined text-[20px]">schedule</span>
+                <div class="flex flex-col">
+                    <span class="font-body-md text-[15px] font-bold">Business Hours</span>
+                    <span class="font-body-md text-[14px]">Mon - Sat: 10 AM to 7 PM</span>
+                    <span class="font-body-md text-[13px] text-primary/80 mt-1 italic">We'll contact you within 30 minutes during business hours.</span>
+                </div>
+            </div>
+            <button onclick="openEnquiryModal('General')" class="mt-4 w-full bg-primary text-on-primary font-label-md py-3 rounded-full hover:bg-opacity-90 transition-all shadow-lg flex items-center justify-center gap-2">
+                <span class="material-symbols-outlined text-[20px]">edit_document</span>
+                Enquire Now
+            </button>
+        
         </div>
     </div>
 
@@ -485,13 +582,13 @@ document.addEventListener('DOMContentLoaded', () => {
     <div class="flex flex-col gap-6">
         <h4 class="font-title-lg text-lg font-bold tracking-wide">Follow Us</h4>
         <div class="flex gap-4">
-            <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors">
+            <a href="javascript:void(0)" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors">
                 <span class="material-symbols-outlined text-[20px] text-white/90">public</span>
             </a>
-            <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors">
+            <a href="javascript:void(0)" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors">
                 <span class="material-symbols-outlined text-[20px] text-white/90">share</span>
             </a>
-            <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors">
+            <a href="javascript:void(0)" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors">
                 <span class="material-symbols-outlined text-[20px] text-white/90">photo_library</span>
             </a>
         </div>
@@ -503,18 +600,10 @@ document.addEventListener('DOMContentLoaded', () => {
 </div>
 </footer>
 
-<!-- BottomNavBar (Mobile Only) -->
-<div class="md:hidden fixed bottom-6 right-6 z-50 flex gap-4">
-<button class="flex items-center gap-2 text-primary dark:text-primary-fixed-dim px-6 py-3 bg-glass-surface dark:bg-primary/90 backdrop-blur-lg border border-glass-border shadow-lg rounded-full font-label-md text-label-md hover:scale-105 transition-transform duration-300">
-<span class="material-symbols-outlined">chat</span>
-<span class="hidden sm:inline">WhatsApp</span>
-</button>
-<button class="flex items-center gap-2 text-primary dark:text-primary-fixed-dim px-6 py-3 bg-glass-surface dark:bg-primary/90 backdrop-blur-lg border border-glass-border shadow-lg rounded-full font-label-md text-label-md hover:scale-105 transition-transform duration-300">
-<span class="material-symbols-outlined">call</span>
-<span class="hidden sm:inline">Call Support</span>
-</button>
-</div>
-    <script src="assets/js/enquiry-system.js"></script>
+
+    <script src="assets/js/enquiry-system.js" defer></script>
+
+<script src="assets/js/mobile-nav.js" defer></script>
 </body></html>
 
 
