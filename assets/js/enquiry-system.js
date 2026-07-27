@@ -368,7 +368,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Let's create the modal container globally.
     const modalOverlay = document.createElement('div');
     modalOverlay.id = 'universal-enquiry-modal';
-    modalOverlay.className = 'fixed inset-0 z-[999] bg-scrim/80 backdrop-blur-sm hidden flex items-center justify-center p-4 overflow-y-auto';
+    modalOverlay.className = 'fixed inset-0 z-[999] bg-black/60 backdrop-blur-sm hidden flex items-center justify-center p-4 overflow-y-auto';
     
     const modalContent = `
         <div class="bg-surface border border-outline-variant rounded-2xl w-full max-w-3xl relative overflow-hidden my-auto shadow-2xl transform transition-all">
@@ -398,14 +398,44 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // We expose a global function for the header buttons
-    window.openEnquiryModal = function() {
+    window.openEnquiryModal = function(destination) {
         modalOverlay.classList.remove('hidden');
         document.body.style.overflow = 'hidden';
+        const destSelect = modalOverlay.querySelector('select[name="destination"]');
+        if (destSelect && destination && destination !== 'General') {
+            const opt = Array.from(destSelect.options).find(o => o.value.toLowerCase() === destination.toLowerCase() || o.text.toLowerCase() === destination.toLowerCase());
+            if (opt) {
+                destSelect.value = opt.value;
+            } else if (defaultDestination && defaultDestination !== '') {
+                destSelect.value = defaultDestination;
+            }
+        } else if (destSelect && destination === 'General' && defaultDestination && defaultDestination !== '') {
+            destSelect.value = defaultDestination;
+        }
+    };
+
+    // Callback modal: no separate callback modal exists; open enquiry modal instead
+    window.openCallbackModal = function() {
+        window.openEnquiryModal('General');
+    };
+
+    // Global close for inline onclick="closeModals()" references
+    window.closeModals = function() {
+        modalOverlay.classList.add('hidden');
+        document.body.style.overflow = 'auto';
     };
 
     // Close on click outside
     modalOverlay.addEventListener('click', (e) => {
         if (e.target === modalOverlay) {
+            modalOverlay.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+    });
+
+    // Close on Escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && !modalOverlay.classList.contains('hidden')) {
             modalOverlay.classList.add('hidden');
             document.body.style.overflow = 'auto';
         }

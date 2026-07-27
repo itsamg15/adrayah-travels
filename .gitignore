@@ -1,0 +1,26 @@
+# Dependencies
+node_modules/
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# OS files
+Thumbs.db
+Desktop.ini
+
+# Editor files
+.vscode/
+.idea/
+
+# Generated reports
+lh-report.json
+lh-report-final.json
+all_screens.json
+image_check_results.json
+
+# Development scripts (optional)
+_dev_scripts/
