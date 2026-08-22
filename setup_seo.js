@@ -4,7 +4,7 @@ const { JSDOM } = require('jsdom');
 
 const dir = './';
 const files = fs.readdirSync(dir).filter(f => f.endsWith('.html') && !f.includes('backup'));
-const baseUrl = 'https://adrayahtravels.com'; // assuming this domain, or something generic
+const baseUrl = 'https://adrayah-travels.vercel.app'; // assuming this domain, or something generic
 
 const titles = {
     'index.html': 'Adrayah Travels - Exotic India through a lens of luxury',
