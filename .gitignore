@@ -24,3 +24,27 @@ image_check_results.json
 
 # Development scripts (optional)
 _dev_scripts/
+setup_seo.js
+production_audit.js
+compare_pages.js
+fix_all_stubs.js
+fix_crawl.js
+fix_enquiry_system.js
+fix_headings_auto.js
+fix_lcp_preload.js
+fix_old_modal_html.js
+fix_stub_recursion.js
+rebuild_contact.js
+replace_tailwind.js
+replace_urls.js
+optimize_images.js
+diagnose_hero.js
+update_header_logo.js
+generate_favicon_package.js
+create_pages.js
+update_headers_footers.ps1
+inject_modals.ps1
+parse_report.js
+
+# Backup files
+assets/images_backup/
