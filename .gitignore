@@ -45,6 +45,8 @@ create_pages.js
 update_headers_footers.ps1
 inject_modals.ps1
 parse_report.js
+check_headings.js
+fav_screens.txt
 
 # Backup files
 assets/images_backup/
