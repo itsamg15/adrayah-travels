@@ -339,6 +339,10 @@ document.addEventListener('DOMContentLoaded', () => {
                     messageContainer.classList.remove('hidden', 'text-error');
                     messageContainer.classList.add('text-success-green');
                     formElement.reset();
+                    
+                    if (typeof window.gtag === 'function') {
+                        window.gtag('event', 'enquiry_submit');
+                    }
                 } else {
                     throw new Error('Network response was not ok.');
                 }
