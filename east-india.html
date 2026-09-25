@@ -731,6 +731,68 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+<div class="fixed inset-0 z-[100] flex items-center justify-center bg-black/60 backdrop-blur-sm p-4 hidden" id="modal-container">
+    <!-- Exit Intent Modal -->
+    <div class="bg-white rounded-2xl w-full max-w-lg p-0 overflow-hidden shadow-2xl transform transition-all duration-300 relative scale-95 opacity-0 hidden" id="exit-modal">
+        <button class="absolute top-4 right-4 text-white hover:text-gray-200 transition-colors z-20 bg-black/20 rounded-full p-1" onclick="closePageModals()">
+            <span class="material-symbols-outlined">close</span>
+        </button>
+        <div class="h-48 relative">
+            <img loading="lazy" alt="Premium travel experiences and comfortable accommodations" class="w-full h-full object-cover" src="assets/images/optimized/ext_8c06484e.webp" srcset="assets/images/optimized/ext_8c06484e-sm.webp 640w, assets/images/optimized/ext_8c06484e-md.webp 1024w, assets/images/optimized/ext_8c06484e-lg.webp 1920w" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 100vw, 100vw">
+            <div class="absolute inset-0 bg-primary/60 pointer-events-none"></div>
+            <div class="absolute inset-0 flex flex-col items-center justify-center text-white p-6 text-center pointer-events-none">
+                <h3 class="font-display-lg font-serif text-3xl mb-2">Wait! Don't Miss Out</h3>
+                <p class="font-body-md opacity-90">Unlock an exclusive offer for your first journey.</p>
+            </div>
+        </div>
+        <div class="p-8 text-center flex flex-col items-center">
+            <p class="font-body-lg text-on-surface-variant mb-6">Get a <span class="font-bold text-primary text-xl">Special Discount</span> on your first booking when you reach out via WhatsApp today.</p>
+            <a class="w-full bg-success-green text-white py-4 rounded-full font-label-md hover:bg-opacity-90 transition-all flex items-center justify-center gap-2 mb-3" href="#" onclick="event.preventDefault(); openEnquiryModal('General');" target="_blank">
+                <span class="material-symbols-outlined">chat</span>
+                Claim Offer on WhatsApp
+            </a>
+            <button class="text-on-surface-variant font-label-md hover:underline text-sm" onclick="closePageModals()">No thanks, I'll pay full price</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    const modalContainer = document.getElementById('modal-container');
+    const exitModal = document.getElementById('exit-modal');
+    
+    function showModal(modalEl) {
+        modalContainer.classList.remove('hidden');
+        modalEl.classList.remove('hidden');
+        setTimeout(() => {
+            modalEl.classList.remove('scale-95', 'opacity-0');
+            modalEl.classList.add('scale-100', 'opacity-100');
+        }, 10);
+    }
+
+    function closePageModals() {
+        if(exitModal) {
+            exitModal.classList.remove('scale-100', 'opacity-100');
+            exitModal.classList.add('scale-95', 'opacity-0');
+        }
+        setTimeout(() => {
+            modalContainer.classList.add('hidden');
+            if(exitModal) exitModal.classList.add('hidden');
+        }, 300);
+    }
+
+    modalContainer.addEventListener('click', (e) => {
+        if (e.target === modalContainer) closePageModals();
+    });
+
+    let exitShown = false;
+    document.addEventListener('mouseleave', (e) => {
+        if (e.clientY < 0 && !exitShown) {
+            exitShown = true;
+            showModal(exitModal);
+        }
+    });
+</script>
+
     <script src="assets/js/enquiry-system.js" defer=""></script>
 
 <script src="assets/js/mobile-nav.js" defer=""></script>
