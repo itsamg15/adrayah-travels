@@ -554,7 +554,7 @@ document.addEventListener('DOMContentLoaded', () => {
 <div class="fixed inset-0 z-[100] flex items-center justify-center bg-black/60 backdrop-blur-sm p-4 hidden" id="modal-container">
 <!-- Callback Modal -->
 <div class="bg-white rounded-2xl w-full max-w-md p-8 shadow-2xl transform scale-95 opacity-0 transition-all duration-300 hidden relative" id="callback-modal">
-<button class="absolute top-4 right-4 text-on-surface-variant hover:text-primary transition-colors" onclick="closeModals()">
+<button class="absolute top-4 right-4 text-on-surface-variant hover:text-primary transition-colors" onclick="closePageModals()">
 <span class="material-symbols-outlined">close</span>
 </button>
 <h3 class="font-headline-md font-serif text-primary mb-2">Request a Callback</h3>
@@ -563,7 +563,7 @@ document.addEventListener('DOMContentLoaded', () => {
 </div>
 <!-- Enquiry Modal -->
 <div class="bg-white rounded-2xl w-full max-w-md p-8 shadow-2xl transform scale-95 opacity-0 transition-all duration-300 hidden relative" id="enquiry-modal">
-<button class="absolute top-4 right-4 text-on-surface-variant hover:text-primary transition-colors" onclick="closeModals()">
+<button class="absolute top-4 right-4 text-on-surface-variant hover:text-primary transition-colors" onclick="closePageModals()">
 <span class="material-symbols-outlined">close</span>
 </button>
 <h3 class="font-headline-md font-serif text-primary mb-2" id="enquiry-title">Enquire Now</h3>
@@ -572,7 +572,7 @@ document.addEventListener('DOMContentLoaded', () => {
 </div>
 <!-- Exit Intent Modal -->
 <div class="bg-white rounded-2xl w-full max-w-lg p-0 overflow-hidden shadow-2xl transform transition-all duration-300 relative scale-95 opacity-0 hidden" id="exit-modal">
-<button class="absolute top-4 right-4 text-white hover:text-gray-200 transition-colors z-20 bg-black/20 rounded-full p-1" onclick="closeModals()">
+<button class="absolute top-4 right-4 text-white hover:text-gray-200 transition-colors z-20 bg-black/20 rounded-full p-1" onclick="closePageModals()">
 <span class="material-symbols-outlined">close</span>
 </button>
 <div class="h-48 relative">
@@ -589,7 +589,7 @@ document.addEventListener('DOMContentLoaded', () => {
 <span class="material-symbols-outlined">chat</span>
                 Claim Offer on WhatsApp
             </a>
-<button class="text-on-surface-variant font-label-md hover:underline text-sm" onclick="closeModals()">No thanks, I'll pay full price</button>
+<button class="text-on-surface-variant font-label-md hover:underline text-sm" onclick="closePageModals()">No thanks, I'll pay full price</button>
 </div>
 </div>
 </div>
@@ -621,7 +621,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 10);
     }
 
-    function closeModals() {
+    function closePageModals() {
         [callbackModal, enquiryModal, exitModal].forEach(m => {
             m.classList.remove('scale-100', 'opacity-100');
             m.classList.add('scale-95', 'opacity-0');
@@ -641,7 +641,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Close on background click
     modalContainer.addEventListener('click', (e) => {
-        if (e.target === modalContainer) closeModals();
+        if (e.target === modalContainer) closePageModals();
     });
 
     // Exit Intent Logic
@@ -772,6 +772,19 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
     </div>
 </div>
+    <!-- Bottom Copyright & Policies -->
+    <div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop mt-12 pt-8 border-t border-white/20 flex flex-col xl:flex-row justify-between items-center gap-y-4 gap-x-8">
+        <p class="font-body-md text-[13px] md:text-[14px] text-white/80 text-center xl:text-left whitespace-normal xl:whitespace-nowrap">
+            &copy; 2026 Adrayah Travels. Operated by <span class="text-[#3b82f6] underline decoration-dashed underline-offset-4">SnapHive</span>. All rights reserved.
+        </p>
+        <div class="flex flex-row flex-wrap xl:flex-nowrap xl:shrink-0 justify-center items-center gap-x-2 sm:gap-x-4 gap-y-2 font-body-md text-[12px] sm:text-[13px] md:text-[14px] text-white/80">
+            <a href="#" class="hover:text-white transition-colors whitespace-nowrap">Privacy Policy</a>
+            <span class="text-white/40">|</span>
+            <a href="#" class="hover:text-white transition-colors whitespace-nowrap">Terms &amp; Conditions</a>
+            <span class="text-white/40">|</span>
+            <a href="#" class="hover:text-white transition-colors whitespace-nowrap">Refund Policy</a>
+        </div>
+    </div>
 </footer>
 <script>
         // Simple slideshow logic
